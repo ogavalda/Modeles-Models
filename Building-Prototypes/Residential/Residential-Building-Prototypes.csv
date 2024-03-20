@@ -1,3 +1,3 @@
-id,Type,Subtype,Heating-fuel,Cooling,Total-Conditioned-Area-m2,Nb-Conditioned-Floors,Model-Year
-1,Single family detached,Post-1980,Electricity,1,180,2,2023
-2,Single family detached,Pre-1980,Electricity,1,180,2,2023
+Folder-ID,Type,Subtype,Nb-Units,Heating-fuel,Cooling,Total-Conditioned-Area-m2,Nb-Conditioned-Floors,Model-Year,OS-version,Eplus-verion,Measures-Ruby
+1,Single family detached,Post-1980,1,Electricity,True,180,2,2023,3.5.1,22.2.0,False
+2,Single family detached,Pre-1980,1,Electricity,True,180,2,2023,3.5.1,22.2.0,False
