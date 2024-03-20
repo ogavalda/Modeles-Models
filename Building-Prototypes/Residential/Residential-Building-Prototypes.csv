@@ -1,0 +1,3 @@
+id,Type,Subtype,Heating-fuel,Cooling,Total-Conditioned-Area-m2,Nb-Conditioned-Floors,Model-Year
+1,Single family detached,Post-1980,Electricity,1,180,2,2023
+2,Single family detached,Pre-1980,Electricity,1,180,2,2023
