@@ -1,0 +1,2 @@
+id,Type,Soustype-Subtype,Chauffage-Heating,Climatisation-Cooling,SurfaceTotalConditionee-TotalConditionedArea-m2,NbEtagesConditiones-NbConditionedFloors,AnneeModele-ModelYear,OS-version,Eplus-version
+1,Education,EcolePrimaire-PrimarySchool,Electricite-Electricity,False,1640,2,2023,3.7.0,23.2.0
