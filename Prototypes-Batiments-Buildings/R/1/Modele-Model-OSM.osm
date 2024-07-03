@@ -1,7 +1,7 @@
 
 OS:Version,
-  {d7b786fc-7d2f-4548-bb11-109cd57c0831}, !- Handle
-  3.6.1;                                  !- Version Identifier
+  {482996a6-2be7-4733-ade8-b07cf84031ca}, !- Handle
+  3.7.0;                                  !- Version Identifier
 
 OS:Schedule:Constant,
   {a420a4e6-ffe8-4bb3-a776-8069deaa0d30}, !- Handle
@@ -1098,9 +1098,9 @@ OS:Construction:AirBoundary,
 
 OS:Site,
   {67954095-e568-4057-a467-6d726fa7832a}, !- Handle
-  Montreal Int'l,                         !- Name
+  MONTREAL INTL A,                        !- Name
   45.47,                                  !- Latitude {deg}
-  -73.75,                                 !- Longitude {deg}
+  -73.74,                                 !- Longitude {deg}
   -5,                                     !- Time Zone {hr}
   36,                                     !- Elevation {m}
   ;                                       !- Terrain
@@ -4285,6 +4285,7 @@ OS:Coil:Cooling:DX:SingleSpeed,
   Autosize,                               !- Evaporative Condenser Air Flow Rate {m3/s}
   Autosize,                               !- Evaporative Condenser Pump Rated Power Consumption {W}
   0,                                      !- Crankcase Heater Capacity {W}
+  ,                                       !- Crankcase Heater Capacity Function of Temperature Curve Name
   0,                                      !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
   ,                                       !- Supply Water Storage Tank Name
   ,                                       !- Condensate Collection Water Storage Tank Name
@@ -4644,18 +4645,18 @@ OS:StandardsInformation:Construction,
   {deb6ad7d-6e92-42fd-b667-80984796465b}; !- Construction Name
 
 OS:WeatherFile,
-  {fe8b3fab-6924-4635-a8a7-dc6716a88536}, !- Handle
-  Montreal Int'l,                         !- City
-  PQ,                                     !- State Province Region
+  {d0fc1e70-4df7-4e7c-8c82-cd87b55441c1}, !- Handle
+  MONTREAL INTL A,                        !- City
+  QC,                                     !- State Province Region
   CAN,                                    !- Country
-  WYEC2-B-94792,                          !- Data Source
+  CWEC2011,                               !- Data Source
   716270,                                 !- WMO Number
   45.47,                                  !- Latitude {deg}
-  -73.75,                                 !- Longitude {deg}
+  -73.74,                                 !- Longitude {deg}
   -5,                                     !- Time Zone {hr}
   36,                                     !- Elevation {m}
-  CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw, !- Url
-  3C3F39E2,                               !- Checksum
+  CAN_QC_MONTREAL-INTL-A_7025251_CWEC.epw, !- Url
+  4F6BC2EF,                               !- Checksum
   ,                                       !- Start Date Actual Year
   Sunday;                                 !- Start Day of Week
 
