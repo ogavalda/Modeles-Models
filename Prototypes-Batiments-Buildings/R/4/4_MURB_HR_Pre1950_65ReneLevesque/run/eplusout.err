@@ -1,0 +1,558 @@
+Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.07.17 06:45,
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** ProcessScheduleInput: Schedule:Day:Interval="FRACTION LATENT DEFAULTDAY - 0.05", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Day:Interval="FRACTION SENSIBLE DEFAULTDAY - 0.2", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Day:Interval="SCHEDULE DAY 47", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Day:Interval="SCHEDULE DAY 48", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Year="0.05 HOT WATER LATENT FRACTION", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Year="0.2 HOT WATER SENSIBLE FRACTION", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Year="FRACTION SENSIBLE - 0.05", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Year="FRACTION SENSIBLE - 0.2", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Compact="DEFAULT 0.5 OPEN FRACTIONAL SCHEDULE", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS OFF DISCRETE", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS ON CONTINUOUS", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
+   **   ~~~   ** Found first in surface=SURFACE 154
+   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
+   ** Warning ** CheckUsedConstructions: There are 11 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 6" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 7" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 11" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 9" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 3" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 13" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 14" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 15" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 1" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 2" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 8" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 22" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 20" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 21" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 19" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 10" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 5" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 12" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 18" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 4" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 17" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="PTHP 1 SPD DX HTG COIL 16" curve values
+   **   ~~~   ** ... Heating Capacity Function of Temperature Curve Name = OS:CURVE:BIQUADRATIC 11 output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.786
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 6
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 7
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 11
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 9
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 3
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 13
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 14
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 15
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 1
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 2
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 8
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 22
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 20
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 21
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 19
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 10
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 5
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 12
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 18
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 4
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 17
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ** Warning ** ZoneHVAC:PackagedTerminalHeatPump = PTHP 16
+   **   ~~~   ** Input for Heating Supply Air Flow Rate Method = SupplyAirFlowRate.
+   **   ~~~   ** Suspicious Heating Supply Air Flow Rate = 2.2204460E-016 when heating coil is present.
+   ************* Beginning Plant Sizing Calculations
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[19461187711473472.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL" - Air volume flow rate per watt of rated total heating capacity is out of range at 19376547047163076. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 6 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 6: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[31864719622730892.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 6" - Air volume flow rate per watt of rated total heating capacity is out of range at 31726133474911020. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 7 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 7: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[61276179124542872.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 7" - Air volume flow rate per watt of rated total heating capacity is out of range at 61009676556231152. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 11 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 11: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[5296119520596577.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 11" - Air volume flow rate per watt of rated total heating capacity is out of range at 5273085619421764. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 9 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 9: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[39720939002212904.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 9" - Air volume flow rate per watt of rated total heating capacity is out of range at 39548184558135576. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 3 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 3: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[4158963487587129.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 3" - Air volume flow rate per watt of rated total heating capacity is out of range at 4140875309329410. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 13 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 13: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[39776342915060728.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 13" - Air volume flow rate per watt of rated total heating capacity is out of range at 39603347508095712. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 14 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 14: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[32658461869029836.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 14" - Air volume flow rate per watt of rated total heating capacity is out of range at 32516423574711304. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 15 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 15: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[31912318095461944.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 15" - Air volume flow rate per watt of rated total heating capacity is out of range at 31773524932201296. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 1 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 1: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[5304121270540755.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 1" - Air volume flow rate per watt of rated total heating capacity is out of range at 5281052568127654. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 2 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 2: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[4157463768888513.500], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 2" - Air volume flow rate per watt of rated total heating capacity is out of range at 4139382113212500. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 8 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 8: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[3701902130199728.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 8" - Air volume flow rate per watt of rated total heating capacity is out of range at 3685801804764428. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 22 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 22: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[4046050200085428.500], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 22" - Air volume flow rate per watt of rated total heating capacity is out of range at 4028453104684794. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 20 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 20: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[6917117904867232.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 20" - Air volume flow rate per watt of rated total heating capacity is out of range at 6887033951962542. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 21 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 21: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[4040962499309723.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 21" - Air volume flow rate per watt of rated total heating capacity is out of range at 4023387531354743. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 19 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 19: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[18982014149879860.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 19" - Air volume flow rate per watt of rated total heating capacity is out of range at 18899457508866216. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 10 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 10: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[32653641666919068.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 10" - Air volume flow rate per watt of rated total heating capacity is out of range at 32511624336640076. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 5 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 5: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[3707106705374411.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 5" - Air volume flow rate per watt of rated total heating capacity is out of range at 3690983744182918. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 12 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 12: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[2982979758014345.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 12" - Air volume flow rate per watt of rated total heating capacity is out of range at 2970006172224720. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 18 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 18: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[3051658615018210.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 18" - Air volume flow rate per watt of rated total heating capacity is out of range at 3038386330908262. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 4 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 4: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[5852154483724839.000], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 4" - Air volume flow rate per watt of rated total heating capacity is out of range at 5826702273382224. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 17 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 17: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[2979029268489594.500], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 17" - Air volume flow rate per watt of rated total heating capacity is out of range at 2966072864182553. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** The Standard Ratings is calculated for Coil:Heating:DX:SingleSpeed = PTHP 1 SPD DX HTG COIL 16 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed PTHP 1 SPD DX HTG COIL 16: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[3050997130961875.500], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 16" - Air volume flow rate per watt of rated total heating capacity is out of range at 3037727723780654. m3/s/W.
+   **   ~~~   **  During Warmup, Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** Expected range for VolumeFlowPerRatedTotalCapacity=[2.684E-005--8.056E-005]
+   **   ~~~   ** Possible causes include inconsistent air flow rates in system components or
+   **   ~~~   ** inconsistent supply air fan operation modes in coil and unitary system objects.
+   ** Warning ** Water heater = 600 GAL WATER HEATER - 600 KBTU/HR:  Recovery Efficiency and Energy Factor could not be calculated during the test for standard ratings
+   **   ~~~   ** Setpoint was never recovered and/or heater never turned on
+   ** Warning ** Output:Meter: invalid Key Name="DISTRICTCOOLING:FACILITY" - not found.
+   ** Warning ** Output:Meter: invalid Key Name="DISTRICTHEATING:FACILITY" - not found.
+   ** Warning ** Output:Meter:MeterFileOnly requested for "Electricity:Facility" (TimeStep), already on "Output:Meter". Will report to both eplusout.eso and eplusout.mtr
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** CalcEquipmentFlowRates: "ESTAR MFHR WHOLE BUILDING WATER USE EQUIPMENT" - Target water temperature is greater than the hot water temperature by (2.03 C)
+   **   ~~~   **  Environment=MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, at Simulation time=07/21 00:00 - 00:10
+   **   ~~~   ** ...target water temperature     = 60.00 C
+   **   ~~~   ** ...hot water temperature        = 57.97 C
+   **   ~~~   ** ...Target water temperature should be less than or equal to the hot water temperature. Verify temperature setpoints and schedules.
+   ** Warning ** Processing Monthly Tabular Reports: Variable names not valid for this simulation
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual variables.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-ELECTRICITY" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-DISTILLATE OIL" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-RESIDUAL OIL" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-NATURAL GAS" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-COAL" has no energy cost. 
+   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
+   ************* Simulation Error Summary *************
+   ************* There are 36 unused schedules in input.
+   ************* There are 35 unused week schedules in input.
+   ************* There are 105 unused day schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 576 total times;
+   *************  **   ~~~   **   during Warmup 16 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=19376547047163076.000000  Min=0.967352
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 6" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 226 total times;
+   *************  **   ~~~   **   during Warmup 31 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=31726133474911020.000000  Min=433334544382948.250000
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 7" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 1 total times;
+   *************  **   ~~~   **   during Warmup 1 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=61009676556231152.000000  Min=61009676556231152.000000
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 11" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 111 total times;
+   *************  **   ~~~   **   during Warmup 21 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=5273085619421764.000000  Min=60106449259145.351562
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 9" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 344 total times;
+   *************  **   ~~~   **   during Warmup 64 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=39548184558135576.000000  Min=600927532732040.750000
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 3" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 76 total times;
+   *************  **   ~~~   **   during Warmup 1 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=4140875309329410.000000  Min=45508758581363.515625
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 13" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 354 total times;
+   *************  **   ~~~   **   during Warmup 84 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=39603347508095712.000000  Min=602114447223959.250000
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 14" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 236 total times;
+   *************  **   ~~~   **   during Warmup 41 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=32516423574711304.000000  Min=452440658385287.375000
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 15" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 241 total times;
+   *************  **   ~~~   **   during Warmup 26 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=31773524932201296.000000  Min=433925455125288.625000
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 1" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 116 total times;
+   *************  **   ~~~   **   during Warmup 21 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=5281052568127654.000000  Min=60225167759792.343750
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 2" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 76 total times;
+   *************  **   ~~~   **   during Warmup 1 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=4139382113212499.500000  Min=45449399331039.992188
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 8" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 341 total times;
+   *************  **   ~~~   **   during Warmup 41 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=3685801804764427.500000  Min=59834897438208.476562
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 22" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 71 total times;
+   *************  **   ~~~   **   during Warmup 1 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=4028453104684794.000000  Min=43589476154236.437500
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 20" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 1 total times;
+   *************  **   ~~~   **   during Warmup 1 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=6887033951962542.000000  Min=6887033951962542.000000
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 21" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 71 total times;
+   *************  **   ~~~   **   during Warmup 1 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=4023387531354743.000000  Min=43530116903912.921875
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 19" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 676 total times;
+   *************  **   ~~~   **   during Warmup 11 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=18899457508866216.000000  Min=0.965190
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 10" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 261 total times;
+   *************  **   ~~~   **   during Warmup 41 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=32511624336640076.000000  Min=453031569127627.750000
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 5" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 311 total times;
+   *************  **   ~~~   **   during Warmup 36 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=3690983744182918.500000  Min=60202610109009.062500
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 12" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 196 total times;
+   *************  **   ~~~   **   during Warmup 21 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=2970006172224719.500000  Min=43573149488533.562500
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 18" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 211 total times;
+   *************  **   ~~~   **   during Warmup 26 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=3038386330908262.500000  Min=45449399331039.992188
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 4" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 1 total times;
+   *************  **   ~~~   **   during Warmup 1 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=5826702273382224.000000  Min=5826702273382224.000000
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 17" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 221 total times;
+   *************  **   ~~~   **   during Warmup 36 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=2966072864182553.000000  Min=43513812471526.937500
+   *************
+   *************  ** Warning ** Coil:Heating:DX:SingleSpeed "PTHP 1 SPD DX HTG COIL 16" - Air volume flow rate per watt of rated total heating capacity is out of range error continues...
+   *************  **   ~~~   **   This error occurred 231 total times;
+   *************  **   ~~~   **   during Warmup 26 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=3037727723780653.500000  Min=45491713038414.531250
+   *************
+   *************  ** Warning ** "ESTAR MFHR WHOLE BUILDING WATER USE EQUIPMENT" - Target water temperature should be less than or equal to the hot water temperature error continues...
+   *************  **   ~~~   **   This error occurred 503159 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=4.989458  Min=0.075405
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 59 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 508224 Warning; 0 Severe Errors; Elapsed Time=00hr 01min 16.01sec

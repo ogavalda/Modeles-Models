@@ -1,0 +1,1099 @@
+[07:03:00.947516 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing run directory: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run
+[07:03:00.947516 DEBUG] [openstudio.workflow.OSWorkflow] Registering that the workflow has started with the adapter
+[07:03:00.947516 DEBUG] [openstudio.workflow.OSWorkflow] Initialization - selected = true
+[07:03:00.947516 DEBUG] [openstudio.workflow.OSWorkflow] The root_dir for the datapoint is C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources
+[07:03:00.947516 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing generated files directory: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/generated_files
+[07:03:00.947516 DEBUG] [openstudio.workflow.OSWorkflow] Creating generated files directory: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/generated_files
+[07:03:00.947516 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing reports directory: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/reports
+[07:03:00.947516 DEBUG] [openstudio.workflow.OSWorkflow] Finding and loading the seed file
+[07:03:00.947516 INFO] [openstudio.worklow.Util] Loading OSM model
+[07:03:00.947516 INFO] [openstudio.worklow.Util] Reading in OSM model C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/4_MURB_HR_1950_1980_3471Hutchison.osm
+[07:03:00.963140 DEBUG] [openstudio.osversion.VersionTranslator] Starting translation from Version 3.7.0.
+[07:03:01.041462 DEBUG] [openstudio.osversion.VersionTranslator] Initial model has 1357 objects.
+[07:03:01.041462 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 1357 objects in IDF form.
+[07:03:01.081592 DEBUG] [utilities.idf.Workspace] Workspace::isValid called.
+[07:03:01.222371 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 1357 objects in Model form.
+[07:03:01.238342 DEBUG] [openstudio.workflow.OSWorkflow] Initialize the weather file from osw
+[07:03:01.238342 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file defined by osw CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:01.248348 DEBUG] [openstudio.EpwFile] No Daylightings Saving start Date
+[07:03:01.248348 WARN] [openstudio.EpwFile] Successive data points (1966-Jan-31 to 1970-Feb-01, ending on line 753) are greater than 1 day apart in EPW file 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw'. Data will be treated as typical (TMY)
+[07:03:01.287756 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:01.295833 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:01.295833 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:01.308639 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:01.314281 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:01.316463 DEBUG] [openstudio.workflow.OSWorkflow] OpenStudioMeasures - selected = true
+[07:03:01.316463 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute OpenStudio Measures
+[07:03:01.316463 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ModelMeasure
+[07:03:01.316463 DEBUG] [openstudio.workflow.OSWorkflow] Running step 0
+[07:03:01.316463 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:03:01.316463 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:01.316463 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/000_SetWindowToWallRatioByFacade'
+[07:03:01.328760 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:01.328760 DEBUG] [openstudio.workflow.OSWorkflow] Found SetWindowToWallRatioByFacade at primaryScriptPath: 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/SetWindowToWallRatioByFacade/measure.rb'
+[07:03:01.328760 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: SetWindowToWallRatioByFacade
+[07:03:01.328760 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/SetWindowToWallRatioByFacade/measure.rb
+[07:03:01.328760 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[07:03:01.328760 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[07:03:01.328760 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, szPath = 'C:\openstudioapplication-1.7.1\bin\openstudiolib.dll'
+[07:03:01.328760 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/bin/openstudiolib.dll
+[07:03:01.328760 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found 'C:/openstudioapplication-1.7.1/bin/openstudiolib.dll'
+[07:03:02.201882 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Set Window to Wall Ratio by Facade'
+[07:03:02.201882 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 2 arguments
+[07:03:02.213968 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'facade' to 'All'
+[07:03:02.213968 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'wwr' to '0.3'
+[07:03:02.213968 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"exl_spaces_not_incl_fl_area": "true", "facade": "All", "inset_tri_sub": "true", "sillHeight": "30", "split_at_doors": "Split Walls at Doors", "triangulate": "true", "triangulation_min_area": "0.001", "wwr": "0.3"}
+[07:03:02.284353 INFO] [openstudio.measure.OSRunner] Space Space 116 in thermal zone Thermal Zone 17 has a zone multiplier of 10. Adjusting area calculations.
+[07:03:02.314543 INFO] [openstudio.measure.OSRunner] Space Space 110 in thermal zone Thermal Zone 11 has a zone multiplier of 10. Adjusting area calculations.
+[07:03:02.314543 INFO] [openstudio.measure.OSRunner] Space Space 111 in thermal zone Thermal Zone 12 has a zone multiplier of 10. Adjusting area calculations.
+[07:03:02.314543 INFO] [openstudio.measure.OSRunner] Space Space 112 in thermal zone Thermal Zone 5 has a zone multiplier of 10. Adjusting area calculations.
+[07:03:02.314543 INFO] [openstudio.measure.OSRunner] Space Space 113 in thermal zone Thermal Zone 14 has a zone multiplier of 10. Adjusting area calculations.
+[07:03:02.324573 INFO] [openstudio.measure.OSRunner] Space Space 114 in thermal zone Thermal Zone 15 has a zone multiplier of 10. Adjusting area calculations.
+[07:03:02.324573 INFO] [openstudio.measure.OSRunner] Space Space 115 in thermal zone Thermal Zone 16 has a zone multiplier of 10. Adjusting area calculations.
+[07:03:02.324573 INFO] [openstudio.measure.OSRunner] The model's initial window to wall ratio for All facing exterior walls was 0.29.
+[07:03:02.354897 INFO] [openstudio.measure.OSRunner] The model's final window to wall ratio for All facing exterior walls is 0.30. Window area increased by 887 (ft^2). The material and construction costs increased by $0.
+[07:03:02.354897 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[07:03:02.354897 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:03:02.354897 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:02.362946 DEBUG] [openstudio.workflow.OSWorkflow] Running step 1
+[07:03:02.362946 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:03:02.362946 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:02.362946 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/001_AssignConstructionSetToBuilding'
+[07:03:02.365052 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:02.365052 DEBUG] [openstudio.workflow.OSWorkflow] Found AssignConstructionSetToBuilding at primaryScriptPath: 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/AssignConstructionSetToBuilding/measure.rb'
+[07:03:02.365052 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AssignConstructionSetToBuilding
+[07:03:02.365052 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/AssignConstructionSetToBuilding/measure.rb
+[07:03:02.365052 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[07:03:02.365052 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[07:03:02.373085 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'AssignConstructionSetToBuilding'
+[07:03:02.373085 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 0 arguments
+[07:03:02.383301 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"construction_set": "{e0ce3521-4e53-4eca-8017-2f1c8dec2b50}"}
+[07:03:02.383301 INFO] [openstudio.measure.OSRunner] The initial model doesn't have a default construction set for the building.
+[07:03:02.383301 INFO] [openstudio.measure.OSRunner] The final model doesn't have a default construction set for the building.
+[07:03:02.383301 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[07:03:02.383301 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:03:02.383301 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:02.385322 DEBUG] [openstudio.workflow.OSWorkflow] Running step 2
+[07:03:02.385322 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:03:02.385322 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:02.385322 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/002_TBDMeasure'
+[07:03:02.385322 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:02.393385 DEBUG] [openstudio.workflow.OSWorkflow] Found TBDMeasure at primaryScriptPath: 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/TBDMeasure/measure.rb'
+[07:03:02.393385 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: TBDMeasure
+[07:03:02.393385 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/TBDMeasure/measure.rb
+[07:03:02.393385 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[07:03:02.393385 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[07:03:02.557252 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Thermal Bridging and Derating - TBD'
+[07:03:02.557252 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 0 arguments
+[07:03:02.579882 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"alter_model": "true", "floor_option": "NONE", "floor_ut": "0.162", "gen_UA_report": "false", "gen_kiva": "false", "gen_kiva_force": "false", "load_tbd_json": "false", "option": "poor (BETBG)", "parapet": "true", "reset_kiva": "false", "roof_option": "NONE", "roof_ut": "0.138", "sub_tol": "0.01", "ua_reference": "code (Quebec)", "wall_option": "NONE", "wall_ut": "0.21", "write_tbd_json": "false"}
+[07:03:02.595233 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:02.601213 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:02.607193 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:02.613173 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:02.619153 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:04.028593 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.028593 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.028593 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.028593 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.044282 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.044282 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.044282 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.044282 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.044282 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.054294 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.054294 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.054294 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.054294 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.054294 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.054294 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.054294 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.054294 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.054294 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.070595 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.072589 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.077522 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Typical IEAD Roof pre1980' to 'Typical IEAD Roof pre1980 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.081509 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R-1.2 Pre1980roof' to 'Typical Insulation R-1.2 Pre1980roof 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.084417 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.084417 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.084417 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.090630 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.093617 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.094614 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.097603 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.098600 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.102587 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Typical IEAD Roof pre1980' to 'Typical IEAD Roof pre1980 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.104582 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R-1.2 Pre1980roof' to 'Typical Insulation R-1.2 Pre1980roof 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.106574 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.108568 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.109563 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.110559 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.112554 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.113551 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.114548 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.116543 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.119529 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Typical IEAD Roof pre1980' to 'Typical IEAD Roof pre1980 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.120526 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R-1.2 Pre1980roof' to 'Typical Insulation R-1.2 Pre1980roof 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.121522 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.122519 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.124128 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.125126 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.127118 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.128115 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.129112 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.130108 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.132101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Typical IEAD Roof pre1980' to 'Typical IEAD Roof pre1980 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.133097 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R-1.2 Pre1980roof' to 'Typical Insulation R-1.2 Pre1980roof 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.134094 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.135091 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.137084 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.138081 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.139078 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.141071 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Typical IEAD Roof pre1980' to 'Typical IEAD Roof pre1980 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R-1.2 Pre1980roof' to 'Typical Insulation R-1.2 Pre1980roof 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.142101 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.157769 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.157769 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.157769 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.157769 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.157769 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.157769 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.157769 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Typical IEAD Roof pre1980' to 'Typical IEAD Roof pre1980 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R-1.2 Pre1980roof' to 'Typical Insulation R-1.2 Pre1980roof 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Typical IEAD Roof pre1980' to 'Typical IEAD Roof pre1980 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R-1.2 Pre1980roof' to 'Typical Insulation R-1.2 Pre1980roof 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.167774 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.183403 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.197910 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.213540 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.229163 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.245261 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.246300 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.247297 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.248292 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.250287 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.251283 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.252285 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.254278 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.255275 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.256266 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.258464 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.259461 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.260457 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.261459 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.263447 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.264443 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.266437 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.267434 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.268430 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.270423 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.271420 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.272608 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.274111 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.274111 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.274111 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.274111 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.274111 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.274111 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Construction' and named 'Generic Exterior Wall pre1980 6A' to 'Generic Exterior Wall pre1980 6A 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.282637 INFO] [utilities.idf.Workspace] Renamed Object of type 'OS:Material:NoMass' and named 'Typical Insulation R1.76 GBC' to 'Typical Insulation R1.76 GBC 1' to avoid a name conflict upon WorkspaceObject addition.
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -46.2% : Surface 10
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -47.2% : Surface 102
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -47.3% : Surface 103
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 104
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 105
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -49.4% : Surface 108
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -49.4% : Surface 109
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -46.1% : Surface 11
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 110
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 111
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -25.8% : Surface 112
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -48.1% : Surface 114
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 115
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 116
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 117
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -14.9% : Surface 118
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 120
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -49.4% : Surface 121
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -49.3% : Surface 122
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 123
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -25.4% : Surface 124
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 126
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -49.4% : Surface 127
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -49.2% : Surface 128
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 129
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -25.1% : Surface 130
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -50.1% : Surface 132
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 133
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 134
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 135
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -50.1% : Surface 136
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 137
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 138
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 139
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -10.1% : Surface 140
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -48.2% : Surface 142
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 143
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 144
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 145
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -14.9% : Surface 146
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -49.2% : Surface 148
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -49.4% : Surface 149
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 150
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 151
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -25.1% : Surface 152
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -37.5% : Surface 17
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -37.3% : Surface 18
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -44.9% : Surface 2
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -39.2% : Surface 22
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -39.2% : Surface 26
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -45.5% : Surface 3
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -37.5% : Surface 32
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -37.5% : Surface 33
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -34.6% : Surface 38
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -45.0% : Surface 4
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -34.7% : Surface 44
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -45.7% : Surface 5
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -37.2% : Surface 50
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -37.5% : Surface 51
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -37.5% : Surface 57
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -37.2% : Surface 58
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -45.9% : Surface 62
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 63
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 64
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 65
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 68
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -47.3% : Surface 69
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -47.2% : Surface 70
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 71
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -47.3% : Surface 74
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -47.3% : Surface 75
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 76
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 77
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -48.2% : Surface 80
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 81
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 82
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 83
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -48.2% : Surface 84
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 85
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 86
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 87
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -45.9% : Surface 90
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 91
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 92
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 93
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 96
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -47.3% : Surface 97
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -47.3% : Surface 98
+[07:03:04.298141 INFO] [openstudio.measure.OSRunner] RSi derated by -21.1% : Surface 99
+[07:03:04.298141 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:04.313771 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:04.313771 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:04.313771 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:04.329392 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:04.351679 INFO] [openstudio.measure.OSRunner] Success! No errors, no warnings - see 'tbd.out.json'
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Running step 3
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/003_SetNISTInfiltrationCorrelations 1'
+[07:03:04.351679 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Found SetNISTInfiltrationCorrelations 1 at primaryScriptPath: 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/SetNISTInfiltrationCorrelations 1/measure.rb'
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: SetNISTInfiltrationCorrelations
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/SetNISTInfiltrationCorrelations 1/measure.rb
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[07:03:04.351679 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[07:03:04.460645 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'SetNISTInfiltrationCorrelations'
+[07:03:04.460645 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 3 arguments
+[07:03:04.476269 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'airtightness_value' to '5'
+[07:03:04.476269 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'building_type' to 'HighriseApartment'
+[07:03:04.476269 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'climate_zone' to '6A'
+[07:03:04.476269 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"air_barrier": "false", "airtightness_area": "5-sided", "airtightness_pressure": "75", "airtightness_value": "5", "building_type": "HighriseApartment", "climate_zone": "6A", "hvac_schedule": "Lookup From Model"}
+[07:03:04.476269 INFO] [openstudio.measure.OSRunner] User-inputed airtightness design value 5.0 (m^3/h-m^2) at 75.0 Pa converts to 0.7439079 (m^3/h-m^2) at 4 Pa
+[07:03:04.476269 INFO] [openstudio.measure.OSRunner] 4-sided area = 1892.81 m^2, 5-sided area = 2596.81 m^2, 6-sided area = 3300.81 m^2.
+[07:03:04.476269 INFO] [openstudio.measure.OSRunner] 5-sided infiltration design value 0.0002066 (m^3/s-m^2) converted to 0.0002066 (m^3/s-m^2) based on 5-sided area 2596.81 m^2 and 5-sided area 2596.81 m^2 excluding ground boundary surfaces for energyplus.
+[07:03:04.476269 WARN] [openstudio.measure.OSRunner] The largest airloop or HVAC system serves 0.0 m^2, which is less than 5% of the building area 4576.0 m^2. Attempting to use building hours of operation schedule instead.
+[07:03:04.476269 WARN] [openstudio.measure.OSRunner] Unable to determine building hours of operation schedule. Treating the building as if there is no HVAC system schedule.
+[07:03:04.476269 WARN] [openstudio.measure.OSRunner] Unable to determine the HVAC schedule. Treating the building as if there is no HVAC system with outdoor air.  If this is not the case, input a schedule argument, or assign one to an air loop in the model.
+[07:03:04.476269 INFO] [openstudio.measure.OSRunner] Using climate zone 6A from user arguments.
+[07:03:04.476269 INFO] [openstudio.measure.OSRunner] Using building type HighriseApartment from user arguments.
+[07:03:04.476269 INFO] [openstudio.measure.OSRunner] The modeled started with 0 infiltration objects and 0 effective leakage area objects.
+[07:03:04.517579 INFO] [openstudio.measure.OSRunner] The modeled finished with 46 infiltration objects.
+[07:03:04.517579 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[07:03:04.517579 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:03:04.517579 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:04.517579 INFO] [openstudio.workflow.OSWorkflow] Finished applying OpenStudio Measures.
+[07:03:04.637510 DEBUG] [openstudio.workflow.OSWorkflow] Translator - selected = true
+[07:03:04.637510 INFO] [openstudio.workflow.OSWorkflow] Beginning the translation to IDF
+[07:03:04.653124 INFO] [openstudio.energyplus.ForwardTranslator] SpaceType Openspace is not referenced by any space, it will not be translated.
+[07:03:04.653124 INFO] [openstudio.energyplus.ForwardTranslator] SpaceType MURB lobby is not referenced by any space, it will not be translated.
+[07:03:04.721239 WARN] [openstudio.energyplus.ForwardTranslator] ThermalZone Thermal Zone 4 does not have any geometry or loads associated with it. It will not be translated
+[07:03:04.779678 WARN] [openstudio.energyplus.ForwardTranslator] OS_ProgramControl is not currently translated
+[07:03:04.783658 WARN] [openstudio.energyplus.ForwardTranslator] ThermalZone Thermal Zone 4 does not have any geometry or loads associated with it. It will not be translated
+[07:03:04.863330 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always Off Discrete', points to an object named OnOff 1 from field 1, but that object cannot be located.
+[07:03:04.863330 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always On Continuous', points to an object named Fractional from field 1, but that object cannot be located.
+[07:03:04.878322 INFO] [openstudio.workflow.OSWorkflow] Successfully translated to IDF
+[07:03:04.878322 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlusMeasures - selected = true
+[07:03:04.878322 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute EnergyPlus Measures.
+[07:03:04.878322 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type EnergyPlusMeasure
+[07:03:04.878322 INFO] [openstudio.workflow.OSWorkflow] Finished applying EnergyPlus Measures.
+[07:03:04.879247 DEBUG] [openstudio.workflow.OSWorkflow] PreProcess - selected = true
+[07:03:04.981066 INFO] [openstudio.workflow.OSWorkflow] Beginning to collect output requests from Reporting measures.
+[07:03:04.981066 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[07:03:04.981066 DEBUG] [openstudio.workflow.OSWorkflow] Running step 4
+[07:03:04.982062 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:03:04.982062 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:03:04.983059 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/004_OpenStudioResults'
+[07:03:04.988770 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:03:04.999969 DEBUG] [openstudio.workflow.OSWorkflow] Found OpenStudioResults at primaryScriptPath: 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/OpenStudioResults/measure.rb'
+[07:03:04.999969 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: OpenStudioResults
+[07:03:05.000298 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/OpenStudioResults/measure.rb
+[07:03:05.000298 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ReportingMeasure
+[07:03:05.000298 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[07:03:14.200667 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'OpenStudio Results'
+[07:03:14.201278 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 1 arguments
+[07:03:14.207458 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[07:03:14.207458 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[07:03:14.207458 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[07:03:14.211412 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[07:03:14.211412 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[07:03:14.211412 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[07:03:14.211412 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[07:03:14.213399 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[07:03:14.225301 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[07:03:14.225301 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[07:03:14.225301 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[07:03:14.251891 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[07:03:14.251891 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[07:03:14.426065 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[07:03:14.426065 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[07:03:14.441804 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[07:03:14.441804 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[07:03:14.467768 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[07:03:14.467768 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[07:03:14.467768 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[07:03:14.467768 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[07:03:14.483449 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[07:03:14.483449 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[07:03:14.483449 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[07:03:14.483449 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[07:03:14.483449 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[07:03:14.483449 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[07:03:14.483449 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[07:03:14.483449 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[07:03:14.499099 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[07:03:14.499099 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[07:03:14.499099 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[07:03:14.499099 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[07:03:14.499099 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[07:03:14.499099 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[07:03:14.499099 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[07:03:14.526380 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[07:03:14.526380 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[07:03:14.526380 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[07:03:14.526380 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[07:03:14.526380 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[07:03:14.542113 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'units' to 'SI'
+[07:03:14.542113 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"air_loops_detail_section": "true", "annual_overview_section": "true", "building_summary_section": "true", "cost_summary_section": "true", "envelope_section_section": "true", "exterior_light_section": "true", "hvac_load_profile": "true", "interior_lighting_section": "true", "measure_warning_section": "true", "monthly_overview_section": "true", "outdoor_air_section": "true", "plant_loops_detail_section": "true", "plug_loads_section": "true", "reg_monthly_details": "false", "schedules_overview_section": "true", "source_energy_section": "true", "space_type_breakdown_section": "true", "space_type_details_section": "true", "units": "SI", "utility_bills_rates_section": "true", "water_use_section": "true", "zone_condition_section": "true", "zone_equipment_detail_section": "true", "zone_summary_section": "true"}
+[07:03:14.542113 DEBUG] [openstudio.workflow.OSWorkflow] Calling measure.energyPlusOutputRequests for 'OpenStudioResults'
+[07:03:14.542113 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[07:03:14.542113 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[07:03:14.542113 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[07:03:14.542113 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[07:03:14.542113 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[07:03:14.542113 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[07:03:14.542113 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[07:03:14.542113 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[07:03:14.567938 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[07:03:14.567938 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[07:03:14.567938 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[07:03:14.614927 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[07:03:14.614927 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[07:03:14.826917 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[07:03:14.826917 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[07:03:14.826917 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[07:03:14.826917 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[07:03:14.842654 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[07:03:14.842654 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[07:03:14.842654 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[07:03:14.842654 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[07:03:14.842654 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[07:03:14.842654 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[07:03:14.842654 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[07:03:14.858511 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[07:03:14.868548 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[07:03:14.906925 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[07:03:14.908155 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[07:03:14.908155 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[07:03:14.908155 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[07:03:14.908155 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[07:03:14.910353 DEBUG] [openstudio.workflow.OSWorkflow] Finished measure.energyPlusOutputRequests for 'OpenStudioResults', 11 output requests added
+[07:03:14.910353 INFO] [openstudio.workflow.OSWorkflow] Finished collecting output requests from Reporting measures.
+[07:03:14.910353 INFO] [openstudio.workflow.OSWorkflow] Running EnergyPlus Preprocess
+[07:03:14.910353 INFO] [openstudio.workflow.OSWorkflow] Finished preprocess job for EnergyPlus simulation
+[07:03:15.015666 DEBUG] [openstudio.workflow.OSWorkflow] Saved final IDF as C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/in.idf
+[07:03:15.015666 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlus - selected = true
+[07:03:15.015666 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Original Directory: C:/openstudioapplication-1.7.1/bin
+[07:03:15.015666 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing To run directory: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run
+[07:03:15.015666 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, szPath = 'C:\openstudioapplication-1.7.1\bin\openstudiolib.dll'
+[07:03:15.015666 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/bin/openstudiolib.dll
+[07:03:15.015666 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found 'C:/openstudioapplication-1.7.1/bin/openstudiolib.dll'
+[07:03:15.015666 DEBUG] [ApplicationPathHelpers] Searching for EnergyPlus in 'C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe'
+[07:03:15.015666 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
+[07:03:15.015666 DEBUG] [ApplicationPathHelpers] Found EnergyPlus at 'C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe'
+[07:03:15.015666 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
+[07:03:15.027281 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] EnergyPlus executable path is C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
+[07:03:15.027281 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] ExpandObjects executable path is C:/openstudioapplication-1.7.1/EnergyPlus/ExpandObjects.exe
+[07:03:15.027281 INFO] [openstudio.workflow.OSWorkflow] Starting simulation in run directory: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run
+[07:03:15.127336 INFO] [openstudio.workflow.OSWorkflow] Running command 'C:/openstudioapplication-1.7.1\EnergyPlus\ExpandObjects.exe'
+[07:03:15.316105 INFO] [openstudio.workflow.OSWorkflow] Running command '"C:/openstudioapplication-1.7.1\EnergyPlus\energyplus.exe" in.idf'
+[07:04:18.231912 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus returned '0'
+[07:04:18.239952 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus finished with 508053 warnings and 0 severe errors
+[07:04:18.239952 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] Removing any copied EnergyPlus files
+[07:04:18.242001 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing Current Directory back to: C:/openstudioapplication-1.7.1/bin
+[07:04:18.242001 DEBUG] [openstudio.workflow.OSWorkflow] ReportingMeasures - selected = true
+[07:04:18.242001 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute Reporting Measures.
+[07:04:18.242001 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[07:04:18.242001 DEBUG] [openstudio.workflow.OSWorkflow] Running step 4
+[07:04:18.242001 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[07:04:18.242001 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[07:04:18.242001 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/004_OpenStudioResults'
+[07:04:18.252216 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:18.270409 DEBUG] [openstudio.workflow.OSWorkflow] Found OpenStudioResults at primaryScriptPath: 'C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/OpenStudioResults/measure.rb'
+[07:04:18.270409 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: OpenStudioResults
+[07:04:18.270409 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/measures/OpenStudioResults/measure.rb
+[07:04:18.270409 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ReportingMeasure
+[07:04:18.270409 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[07:04:18.333976 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'OpenStudio Results'
+[07:04:18.333976 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 1 arguments
+[07:04:18.344103 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[07:04:18.344103 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[07:04:18.344103 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[07:04:18.354153 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[07:04:18.354153 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[07:04:18.354153 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[07:04:18.354153 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[07:04:18.354153 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[07:04:18.374277 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[07:04:18.374277 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[07:04:18.374277 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[07:04:18.425119 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[07:04:18.425119 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[07:04:18.637488 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[07:04:18.639594 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[07:04:18.639594 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[07:04:18.639594 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[07:04:18.657915 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[07:04:18.660025 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[07:04:18.660025 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[07:04:18.660025 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[07:04:18.680489 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[07:04:18.680489 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[07:04:18.680489 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[07:04:18.690784 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[07:04:18.690784 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[07:04:18.690784 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[07:04:18.690784 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[07:04:18.690784 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[07:04:18.690784 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[07:04:18.698809 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[07:04:18.698809 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[07:04:18.698809 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[07:04:18.698809 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[07:04:18.698809 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[07:04:18.698809 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[07:04:18.728973 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[07:04:18.728973 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[07:04:18.728973 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[07:04:18.730978 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[07:04:18.730990 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[07:04:18.741026 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'units' to 'SI'
+[07:04:18.741026 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"air_loops_detail_section": "true", "annual_overview_section": "true", "building_summary_section": "true", "cost_summary_section": "true", "envelope_section_section": "true", "exterior_light_section": "true", "hvac_load_profile": "true", "interior_lighting_section": "true", "measure_warning_section": "true", "monthly_overview_section": "true", "outdoor_air_section": "true", "plant_loops_detail_section": "true", "plug_loads_section": "true", "reg_monthly_details": "false", "schedules_overview_section": "true", "source_energy_section": "true", "space_type_breakdown_section": "true", "space_type_details_section": "true", "units": "SI", "utility_bills_rates_section": "true", "water_use_section": "true", "zone_condition_section": "true", "zone_equipment_detail_section": "true", "zone_summary_section": "true"}
+[07:04:18.761109 DEBUG] [openstudio.energyplus.SqlFile] Dictionary Built
+[07:04:19.943302 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[07:04:19.943302 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[07:04:19.943302 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[07:04:19.958933 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[07:04:19.958933 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[07:04:19.958933 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[07:04:19.958933 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[07:04:19.958933 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[07:04:19.974557 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[07:04:19.974557 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[07:04:19.974557 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[07:04:20.037050 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[07:04:20.037050 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[07:04:20.318275 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[07:04:20.318275 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[07:04:20.328431 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[07:04:20.328431 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[07:04:20.357250 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[07:04:20.359298 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[07:04:20.359298 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[07:04:20.359298 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[07:04:20.367429 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[07:04:20.367429 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[07:04:20.367429 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[07:04:20.387794 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[07:04:20.389924 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[07:04:20.389924 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[07:04:20.389924 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[07:04:20.389924 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[07:04:20.400407 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[07:04:20.400407 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[07:04:20.408511 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[07:04:20.408617 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[07:04:20.408617 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[07:04:20.408617 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[07:04:20.410818 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[07:04:20.442152 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[07:04:20.442152 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[07:04:20.442152 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[07:04:20.442152 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[07:04:20.442152 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[07:04:20.450451 INFO] [openstudio.measure.OSRunner] Gathering data from EnergyPlus SQL file and OSM model. Will report in SI Units
+[07:04:20.761295 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:20.787052 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:20.802685 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:20.814725 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:20.830392 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:40.173282 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[07:04:40.173282 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[07:04:40.173282 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[07:04:40.183525 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[07:04:40.183525 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[07:04:40.183525 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[07:04:40.183525 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[07:04:40.183525 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[07:04:40.203806 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[07:04:40.203806 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[07:04:40.203806 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[07:04:40.252971 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[07:04:40.253983 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[07:04:40.468418 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[07:04:40.468418 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[07:04:40.478599 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[07:04:40.478599 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[07:04:40.488862 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[07:04:40.488862 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[07:04:40.488862 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[07:04:40.488862 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[07:04:40.497039 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[07:04:40.497039 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[07:04:40.497039 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[07:04:40.499213 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[07:04:40.507397 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[07:04:40.507397 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[07:04:40.507397 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[07:04:40.507397 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[07:04:40.509518 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[07:04:40.509518 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[07:04:40.509518 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[07:04:40.509518 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[07:04:40.509518 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[07:04:40.509518 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[07:04:40.509518 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[07:04:40.561139 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[07:04:40.561139 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[07:04:40.561139 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[07:04:40.561139 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[07:04:40.561139 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[07:04:40.776606 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[07:04:40.776606 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[07:04:40.776606 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[07:04:40.787393 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[07:04:40.787393 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[07:04:40.787849 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[07:04:40.787849 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[07:04:40.790870 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[07:04:40.808810 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[07:04:40.808810 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[07:04:40.809806 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[07:04:40.861948 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[07:04:40.861948 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[07:04:41.068470 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[07:04:41.068470 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[07:04:41.068470 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[07:04:41.068470 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[07:04:41.068470 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[07:04:41.084200 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[07:04:41.085021 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[07:04:41.085021 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[07:04:41.085922 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[07:04:41.086331 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[07:04:41.086331 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[07:04:41.091537 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[07:04:41.092533 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[07:04:41.092533 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[07:04:41.092533 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[07:04:41.092533 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[07:04:41.094526 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[07:04:41.095527 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[07:04:41.095527 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[07:04:41.095527 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[07:04:41.095527 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[07:04:41.095527 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[07:04:41.097513 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[07:04:41.111189 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[07:04:41.112189 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[07:04:41.112189 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[07:04:41.112189 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[07:04:41.112189 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[07:04:41.822289 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Monthly', timeSeriesName = 'Site Outdoor Air Drybulb Temperature', keyValue = 'Environment'
+[07:04:41.822289 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:41.822289 DEBUG] [openstudio.energyplus.SqlFile] Site Outdoor Air Drybulb Temperature
+[07:04:41.822289 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=7 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:41.822289 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:41.822289 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 1'
+[07:04:41.822289 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:41.822289 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:41.822289 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=831 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:41.863539 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:41.913571 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 10'
+[07:04:41.913571 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:41.913571 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:41.913571 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=967 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:41.958588 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.007001 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 11'
+[07:04:42.007001 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.007001 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.007001 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1031 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.038355 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.075560 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 12'
+[07:04:42.075560 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.075560 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.076557 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1095 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.109119 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.144212 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 13'
+[07:04:42.144212 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.144212 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.144212 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1159 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.179518 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.215576 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 14'
+[07:04:42.215576 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.215576 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.216572 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1223 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.248606 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.286352 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 15'
+[07:04:42.286352 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.286352 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.286352 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1287 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.318992 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.357537 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 16'
+[07:04:42.357537 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.358529 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.358529 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1351 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.390670 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.429652 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 17'
+[07:04:42.429652 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.429652 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.430644 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1415 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.462040 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.499986 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 18'
+[07:04:42.499986 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.499986 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.500991 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1479 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.534979 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.571241 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 19'
+[07:04:42.571241 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.571241 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.572238 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1543 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.604682 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.639623 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 2'
+[07:04:42.639623 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.639623 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.639623 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1607 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.673390 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.708190 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 20'
+[07:04:42.708190 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.708190 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.709187 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1671 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.752769 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.800993 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 21'
+[07:04:42.800993 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.800993 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.801940 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1735 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.845632 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.890010 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 22'
+[07:04:42.890010 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.890010 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.896113 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1799 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:42.938589 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:42.986455 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 23'
+[07:04:42.986455 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:42.986455 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:42.988457 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1863 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.033099 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.081948 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 24'
+[07:04:43.081948 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.081948 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:43.082947 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1927 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.127860 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.174993 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 3'
+[07:04:43.175984 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.175984 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:43.176990 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1991 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.220083 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.269362 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 5'
+[07:04:43.269362 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.269362 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:43.270380 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2055 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.305811 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.359894 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 6'
+[07:04:43.359894 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.359894 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:43.362081 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2119 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.401601 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.457201 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 7'
+[07:04:43.457201 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.457201 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:43.458567 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2183 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.490860 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.550268 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 8'
+[07:04:43.550268 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.550268 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:43.552280 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2247 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.590368 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.640307 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'THERMAL ZONE 9'
+[07:04:43.640307 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.640307 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[07:04:43.640307 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2311 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.685439 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.725988 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 1'
+[07:04:43.725988 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.725988 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:43.725988 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=832 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.785840 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.801565 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 10'
+[07:04:43.801565 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.801565 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:43.801565 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=968 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.862066 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.903613 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 11'
+[07:04:43.903613 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.903613 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:43.906430 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1032 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:43.949277 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:43.978853 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 12'
+[07:04:43.978853 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:43.978853 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:43.979850 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1096 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.023352 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.051251 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 13'
+[07:04:44.051251 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.051251 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.052240 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1160 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.096340 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.124044 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 14'
+[07:04:44.124044 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.124044 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.124044 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1224 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.155342 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.196534 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 15'
+[07:04:44.197530 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.197530 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.198536 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1288 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.232066 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.269132 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 16'
+[07:04:44.269132 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.269132 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.270122 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1352 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.307237 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.338588 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 17'
+[07:04:44.338588 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.338588 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.338588 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1416 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.387131 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.408297 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 18'
+[07:04:44.408297 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.408297 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.408297 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1480 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.456289 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.487844 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 19'
+[07:04:44.487844 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.487844 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.488834 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1544 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.527301 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.561160 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 2'
+[07:04:44.561160 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.561160 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.562158 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1608 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.590196 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.622112 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 20'
+[07:04:44.622112 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.622112 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.622112 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1672 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.672315 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.712245 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 21'
+[07:04:44.712245 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.712245 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.713242 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1736 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.749116 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.772478 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 22'
+[07:04:44.772478 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.772478 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.772478 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1800 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.803650 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.835111 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 23'
+[07:04:44.835111 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.835111 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.835111 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1864 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.872542 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.888167 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 24'
+[07:04:44.888167 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.888167 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.888167 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1928 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.935736 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:44.959764 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 3'
+[07:04:44.959764 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:44.959764 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:44.960753 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=1992 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:44.995554 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:45.019783 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 5'
+[07:04:45.019783 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:45.019783 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:45.020779 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2056 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:45.055499 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:45.079723 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 6'
+[07:04:45.079723 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:45.079723 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:45.080715 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2120 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:45.115863 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:45.140098 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 7'
+[07:04:45.140098 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:45.140098 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:45.141694 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2184 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:45.173693 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:45.203694 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 8'
+[07:04:45.203694 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:45.203694 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:45.204689 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2248 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:45.225133 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:45.264542 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'THERMAL ZONE 9'
+[07:04:45.264542 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[07:04:45.264542 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[07:04:45.265536 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=2312 AND Time.EnvironmentPeriodIndex = 8Return Code:
+100
+[07:04:45.290920 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[07:04:45.804467 DEBUG] [openstudio.model.ModelObject] The direct query failed:
+SELECT Value FROM ComponentSizes
+  WHERE CompType = 'ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC'
+    AND CompName = 'ELEC BASEBOARD 3'
+    AND Description = 'Design Size Heating Design Capacity'
+    AND Units = 'W';
+[07:04:45.818069 DEBUG] [openstudio.model.ModelObject] The direct query failed:
+SELECT Value FROM ComponentSizes
+  WHERE CompType = 'WaterHeater:Mixed'
+    AND CompName = '600 GAL WATER HEATER - 600 KBTU/HR'
+    AND Description = 'Design Size Use Side Design Flow Rate'
+    AND Units = 'm3/s';
+[07:04:46.914134 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:46.914134 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:46.929867 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:46.929867 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:46.929867 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:46.945499 DEBUG] [openstudio.WorkflowStepResult] WorkflowStepResult::warnings is deprecated, use stepWarnings instead
+[07:04:46.945499 DEBUG] [openstudio.WorkflowStepResult] WorkflowStepResult::warnings is deprecated, use stepWarnings instead
+[07:04:46.945499 DEBUG] [openstudio.WorkflowStepResult] WorkflowStepResult::warnings is deprecated, use stepWarnings instead
+[07:04:46.945499 DEBUG] [openstudio.WorkflowStepResult] WorkflowStepResult::warnings is deprecated, use stepWarnings instead
+[07:04:46.945499 DEBUG] [openstudio.WorkflowStepResult] WorkflowStepResult::warnings is deprecated, use stepWarnings instead
+[07:04:47.045524 INFO] [openstudio.measure.OSRunner] Generated report with 22 sections to ./report.html.
+[07:04:47.045524 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[07:04:47.045524 INFO] [openstudio.workflow.OSWorkflow] Finished applying Reporting Measures.
+[07:04:47.061155 DEBUG] [openstudio.workflow.OSWorkflow] PostProcess - selected = true
+[07:04:47.061155 INFO] [openstudio.workflow.OSWorkflow] Gathering reports
+[07:04:47.061155 INFO] [openstudio.workflow.Util] Run directory: C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run
+[07:04:47.061155 INFO] [openstudio.workflow.Util] Reports directoryC:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources
+[07:04:47.061155 INFO] [openstudio.workflow.Util] Saving EnergyPlus HTML report to C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/reports/eplustbl.html
+[07:04:47.061155 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:47.077264 INFO] [openstudio.workflow.Util] Saving report C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/004_OpenStudioResults/report.html to C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/reports/openstudio_results_report.html
+[07:04:47.077264 INFO] [openstudio.workflow.Util] Removing empty directory C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/000_SetWindowToWallRatioByFacade
+[07:04:47.077264 INFO] [openstudio.workflow.Util] Removing empty directory C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/001_AssignConstructionSetToBuilding
+[07:04:47.077264 INFO] [openstudio.workflow.Util] Removing empty directory C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/002_TBDMeasure
+[07:04:47.077264 INFO] [openstudio.workflow.Util] Removing empty directory C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-effd-9a54-e538-2b77-1721214101-0/resources/run/003_SetNISTInfiltrationCorrelations 1
+[07:04:47.077264 INFO] [openstudio.workflow.OSWorkflow] Finished gathering reports
+[07:04:47.077264 DEBUG] [openstudio.workflow.OSWorkflow] Cleanup - selected = true
+[07:04:47.077264 INFO] [openstudio.workflow.OSWorkflow] Beginning cleanup of the run directory
+[07:04:47.077264 INFO] [openstudio.workflow.OSWorkflow] Finished cleanup of the run directory
+[07:04:51.564795 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:51.585149 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:51.590139 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:51.596228 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[07:04:51.597883 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD

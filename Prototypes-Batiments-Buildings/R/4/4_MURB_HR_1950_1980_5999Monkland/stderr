@@ -1,0 +1,48 @@
+:/ruby/2.7.0/gems/topolys-0.6.2/lib/topolys/version.rb:2: warning: already initialized constant Topolys::VERSION
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/version.rb:2: warning: previous definition of VERSION was here
+:/ruby/2.7.0/gems/oslg-0.2.10/lib/oslg/oslog.rb:32: warning: already initialized constant OSlg::DEBUG
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/oslog.rb:32: warning: previous definition of DEBUG was here
+:/ruby/2.7.0/gems/oslg-0.2.10/lib/oslg/oslog.rb:33: warning: already initialized constant OSlg::INFO
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/oslog.rb:33: warning: previous definition of INFO was here
+:/ruby/2.7.0/gems/oslg-0.2.10/lib/oslg/oslog.rb:34: warning: already initialized constant OSlg::WARN
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/oslog.rb:34: warning: previous definition of WARN was here
+:/ruby/2.7.0/gems/oslg-0.2.10/lib/oslg/oslog.rb:35: warning: already initialized constant OSlg::ERROR
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/oslog.rb:35: warning: previous definition of ERROR was here
+:/ruby/2.7.0/gems/oslg-0.2.10/lib/oslg/oslog.rb:36: warning: already initialized constant OSlg::FATAL
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/oslog.rb:36: warning: previous definition of FATAL was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:36: warning: already initialized constant OSut::TOL
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:37: warning: previous definition of TOL was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:37: warning: already initialized constant OSut::TOL2
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:38: warning: previous definition of TOL2 was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:38: warning: already initialized constant OSut::DBG
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:39: warning: previous definition of DBG was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:39: warning: already initialized constant OSut::INF
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:40: warning: previous definition of INF was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:40: warning: already initialized constant OSut::WRN
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:41: warning: previous definition of WRN was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:41: warning: already initialized constant OSut::ERR
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:42: warning: previous definition of ERR was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:42: warning: already initialized constant OSut::FTL
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:43: warning: previous definition of FTL was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:43: warning: already initialized constant OSut::NS
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:44: warning: previous definition of NS was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:44: warning: already initialized constant OSut::HEAD
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:46: warning: previous definition of HEAD was here
+:/ruby/2.7.0/gems/osut-0.3.0/lib/osut/utils.rb:45: warning: already initialized constant OSut::SILL
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/utils.rb:47: warning: previous definition of SILL was here
+:/ruby/2.7.0/bundler/gems/tbd-8c7a2d4bf19a/lib/tbd.rb:83: warning: already initialized constant TBD::TOL
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/tbd.rb:45: warning: previous definition of TOL was here
+:/ruby/2.7.0/bundler/gems/tbd-8c7a2d4bf19a/lib/tbd.rb:84: warning: already initialized constant TBD::TOL2
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/tbd.rb:46: warning: previous definition of TOL2 was here
+:/ruby/2.7.0/bundler/gems/tbd-8c7a2d4bf19a/lib/tbd.rb:85: warning: already initialized constant TBD::DBG
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/tbd.rb:47: warning: previous definition of DBG was here
+:/ruby/2.7.0/bundler/gems/tbd-8c7a2d4bf19a/lib/tbd.rb:86: warning: already initialized constant TBD::INF
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/tbd.rb:48: warning: previous definition of INF was here
+:/ruby/2.7.0/bundler/gems/tbd-8c7a2d4bf19a/lib/tbd.rb:87: warning: already initialized constant TBD::WRN
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/tbd.rb:49: warning: previous definition of WRN was here
+:/ruby/2.7.0/bundler/gems/tbd-8c7a2d4bf19a/lib/tbd.rb:88: warning: already initialized constant TBD::ERR
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/tbd.rb:50: warning: previous definition of ERR was here
+:/ruby/2.7.0/bundler/gems/tbd-8c7a2d4bf19a/lib/tbd.rb:89: warning: already initialized constant TBD::FTL
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/tbd.rb:51: warning: previous definition of FTL was here
+:/ruby/2.7.0/bundler/gems/tbd-8c7a2d4bf19a/lib/tbd.rb:90: warning: already initialized constant TBD::NS
+C:/Users/ORIOL~1.GAV/AppData/Local/Temp/osmodel-d443-5404-20ce-64bf-1721213287-0/resources/measures/TBDMeasure/resources/tbd.rb:52: warning: previous definition of NS was here

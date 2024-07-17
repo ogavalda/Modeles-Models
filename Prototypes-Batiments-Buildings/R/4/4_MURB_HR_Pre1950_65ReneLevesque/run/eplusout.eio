@@ -1,0 +1,1103 @@
+Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.07.17 06:45
+! <Version>, Version ID
+ Version, 23.2
+! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
+ Timesteps per Hour,  6, 10
+! <System Convergence Limits>, Minimum System TimeStep {minutes}, Max HVAC Iterations, Minimum Plant Iterations, Maximum Plant Iterations
+ System Convergence Limits, 1, 20, 2, 8
+! <Simulation Control>, Do Zone Sizing, Do System Sizing, Do Plant Sizing, Do Design Days, Do Weather Simulation, Do HVAC Sizing Simulation
+ Simulation Control, Yes, No, Yes, Yes, Yes, No
+! <Performance Precision Tradeoffs>, Use Coil Direct Simulation, Zone Radiant Exchange Algorithm, Override Mode, Number of Timestep In Hour, Force Euler Method, Minimum Number of Warmup Days, Force Suppress All Begin Environment Resets, Minimum System Timestep, MaxZoneTempDiff, MaxAllowedDelTemp
+ Performance Precision Tradeoffs, No, ScriptF, Normal, 6, No, 1, No, 1.0, 0.300, 2.0000E-003
+! <Output Reporting Tolerances>, Tolerance for Time Heating Setpoint Not Met, Tolerance for Zone Cooling Setpoint Not Met Time
+ Output Reporting Tolerances, 0.200, 0.200, 
+! <Site:GroundTemperature:BuildingSurface>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:BuildingSurface,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00,  18.00
+! <Site:GroundTemperature:FCfactorMethod>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:FCfactorMethod,  -1.50,  -6.19,  -7.46,  -6.35,  -0.03,   7.05,  13.71,  18.53,  19.94,  17.67,  12.21,   5.33
+! <Site:GroundTemperature:Shallow>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Shallow,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00
+! <Site:GroundTemperature:Deep>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Deep,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00
+! <Site:GroundReflectance>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:SnowModifier>, Normal, Daylighting {dimensionless}
+ Site:GroundReflectance:SnowModifier,   1.000,   1.000
+! <Site:GroundReflectance:Snow>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:Snow:Daylighting>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow:Daylighting,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Environment:Weather Station>,Wind Sensor Height Above Ground {m},Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Sensor Height Above Ground {m},Wind Speed Modifier Coefficient-Internal,Temperature Modifier Coefficient-Internal
+Environment:Weather Station,10.000,0.140,270.000,1.500,1.586,9.750E-003
+! <Site:Location>, Location Name, Latitude {N+/S- Deg}, Longitude {E+/W- Deg},  Time Zone Number {GMT+/-}, Elevation {m},  Standard Pressure at Elevation {Pa}, Standard RhoAir at Elevation
+Site:Location,Montreal Int'l PQ CAN WYEC2-B-94792 WMO#=716270,45.47,-73.75,-5.00,36.00,100893,1.1992
+! <Site Water Mains Temperature Information>,Calculation Method{},Water Mains Temperature Schedule Name{},Annual Average Outdoor Air Temperature{C},Maximum Difference In Monthly Average Outdoor Air Temperatures{deltaC},Fixed Default Water Mains Temperature{C}
+Site Water Mains Temperature Information,FixedDefault,NA,NA,NA,10.0
+! <Building Information>, Building Name,North Axis {deg},Terrain,  Loads Convergence Tolerance Value,Temperature Convergence Tolerance Value,  Solar Distribution,Maximum Number of Warmup Days,Minimum Number of Warmup Days
+ Building Information,Building 1,0.000,Suburbs,4.00000E-002,0.40000,FullExterior,25,1
+! <Inside Convection Algorithm>, Algorithm {Simple | TARP | CeilingDiffuser | AdaptiveConvectionAlgorithm}
+Inside Convection Algorithm,TARP
+! <Outside Convection Algorithm>, Algorithm {SimpleCombined | TARP | MoWitt | DOE-2 | AdaptiveConvectionAlgorithm}
+Outside Convection Algorithm,DOE-2
+! <Sky Radiance Distribution>, Value {Anisotropic}
+Sky Radiance Distribution,Anisotropic
+! <Zone Air Solution Algorithm>, Algorithm {ThirdOrderBackwardDifference | AnalyticalSolution | EulerMethod}, Space Heat Balance Sizing, Space Heat Balance Simulation
+ Zone Air Solution Algorithm, AnalyticalSolution, No, No
+! <Zone Air Carbon Dioxide Balance Simulation>, Simulation {Yes/No}, Carbon Dioxide Concentration
+ Zone Air Carbon Dioxide Balance Simulation, No,N/A
+! <Zone Air Generic Contaminant Balance Simulation>, Simulation {Yes/No}, Generic Contaminant Concentration
+ Zone Air Generic Contaminant Balance Simulation, No,N/A
+! <Zone Air Mass Flow Balance Simulation>, Enforce Mass Balance, Adjust Zone Mixing and Return {AdjustMixingOnly | AdjustReturnOnly | AdjustMixingThenReturn | AdjustReturnThenMixing | None}, Adjust Zone Infiltration {AddInfiltration | AdjustInfiltration | None}, Infiltration Zones {MixingSourceZonesOnly | AllZones}
+ Zone Air Mass Flow Balance Simulation, No,N/A,N/A,N/A
+! <HVACSystemRootFindingAlgorithm>, Value {RegulaFalsi | Bisection | BisectionThenRegulaFalsi | RegulaFalsiThenBisection}
+ HVACSystemRootFindingAlgorithm, RegulaFalsi
+! <Environment:Site Atmospheric Variation>,Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Gradient Coefficient {K/m}
+Environment:Site Atmospheric Variation,0.220,370.000,6.500000E-003
+! <Surface Geometry>,Starting Corner,Vertex Input Direction,Coordinate System,Daylight Reference Point Coordinate System,Rectangular (Simple) Surface Coordinate System
+ Surface Geometry,UpperLeftCorner,Counterclockwise,RelativeCoordinateSystem,RelativeCoordinateSystem,RelativeToZoneOrigin
+! <Surface Heat Transfer Algorithm>, Value {CTF - ConductionTransferFunction | EMPD - MoisturePenetrationDepthConductionTransferFunction | CondFD - ConductionFiniteDifference | HAMT - CombinedHeatAndMoistureFiniteElement} - Description,Inside Surface Max Temperature Limit{C}, Surface Convection Coefficient Lower Limit {W/m2-K}, Surface Convection Coefficient Upper Limit {W/m2-K}
+Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,200,0.10,1000.0
+! <Shading Summary>, Number of Fixed Detached Shades, Number of Building Detached Shades, Number of Attached Shades
+ Shading Summary,0,0,0
+! <Zone Summary>, Number of Zones, Number of Zone Surfaces, Number of SubSurfaces
+ Zone Summary,23,272,113
+! <Zone Information>,Zone Name,North Axis {deg},Origin X-Coordinate {m},Origin Y-Coordinate {m},Origin Z-Coordinate {m},Centroid X-Coordinate {m},Centroid Y-Coordinate {m},Centroid Z-Coordinate {m},Type,Zone Multiplier,Zone List Multiplier,Minimum X {m},Maximum X {m},Minimum Y {m},Maximum Y {m},Minimum Z {m},Maximum Z {m},Ceiling Height {m},Volume {m3},Zone Inside Convection Algorithm {Simple-Detailed-CeilingDiffuser-TrombeWall},Zone Outside Convection Algorithm {Simple-Detailed-Tarp-MoWitt-DOE-2-BLAST}, Floor Area {m2},Exterior Gross Wall Area {m2},Exterior Net Wall Area {m2},Exterior Window Area {m2}, Number of Surfaces, Number of SubSurfaces, Number of Shading SubSurfaces,  Part of Total Building Area
+ Zone Information, THERMAL ZONE 1,0.0,17.53,0.00,3.05,8.77,32.50,4.57,1,1,1,0.00,17.53,0.00,65.00,3.05,6.10,3.05,3473.04,TARP,DOE-2,1139.45,503.10,352.17,150.93,6,4,0,Yes
+ Zone Information, THERMAL ZONE 10,0.0,11.53,32.00,21.10,5.77,26.50,22.62,1,10,1,0.00,11.53,21.00,32.00,21.10,24.14,3.05,386.58,TARP,DOE-2,126.83,137.34,96.14,41.20,6,4,0,Yes
+ Zone Information, THERMAL ZONE 11,0.0,13.53,55.00,21.10,12.53,32.50,22.62,1,10,1,11.53,13.53,10.00,55.00,21.10,24.14,3.05,274.32,TARP,DOE-2,90.00,286.51,200.56,85.95,9,7,0,Yes
+ Zone Information, THERMAL ZONE 12,0.0,11.53,10.00,39.10,9.14,5.67,40.62,1,1,1,0.00,17.53,0.00,10.00,39.10,42.14,3.05,533.79,TARP,DOE-2,175.13,167.73,117.41,50.32,8,6,0,Yes
+ Zone Information, THERMAL ZONE 13,0.0,11.53,10.00,21.10,9.14,5.67,22.62,1,10,1,0.00,17.53,0.00,10.00,21.10,24.14,3.05,533.79,TARP,DOE-2,175.13,167.73,117.41,50.32,8,6,0,Yes
+ Zone Information, THERMAL ZONE 14,0.0,11.53,43.50,39.10,5.76,37.75,40.62,1,1,1,0.00,11.53,32.00,43.50,39.10,42.14,3.05,404.15,TARP,DOE-2,132.60,140.39,98.27,42.12,6,4,0,Yes
+ Zone Information, THERMAL ZONE 15,0.0,0.00,54.97,21.10,9.14,59.32,22.62,1,10,1,0.00,17.53,54.97,65.00,21.10,24.14,3.05,534.84,TARP,DOE-2,175.47,167.91,117.54,50.37,8,6,0,Yes
+ Zone Information, THERMAL ZONE 16,0.0,0.00,43.50,21.10,5.77,49.24,22.62,1,10,1,0.00,11.53,43.50,55.00,21.10,24.14,3.05,403.62,TARP,DOE-2,132.42,140.30,98.21,42.09,6,4,0,Yes
+ Zone Information, THERMAL ZONE 17,0.0,11.53,21.00,21.10,5.76,15.49,22.62,1,10,1,0.00,11.53,9.97,21.00,21.10,24.14,3.05,387.10,TARP,DOE-2,127.00,137.43,96.20,41.23,6,4,0,Yes
+ Zone Information, THERMAL ZONE 18,0.0,0.00,54.97,39.10,9.14,59.32,40.62,1,1,1,0.00,17.53,54.97,65.00,39.10,42.14,3.05,534.84,TARP,DOE-2,175.47,167.91,117.54,50.37,8,6,0,Yes
+ Zone Information, THERMAL ZONE 19,0.0,0.00,43.50,39.10,5.77,49.24,40.62,1,1,1,0.00,11.53,43.50,55.00,39.10,42.14,3.05,403.62,TARP,DOE-2,132.42,140.30,98.21,42.09,6,4,0,Yes
+ Zone Information, THERMAL ZONE 2,0.0,11.53,10.00,6.10,9.14,5.67,7.62,1,1,1,0.00,17.53,0.00,10.00,6.10,9.14,3.05,533.79,TARP,DOE-2,175.13,167.73,117.41,50.32,8,6,0,Yes
+ Zone Information, THERMAL ZONE 20,0.0,11.53,21.00,39.10,5.76,15.49,40.62,1,1,1,0.00,11.53,9.97,21.00,39.10,42.14,3.05,387.10,TARP,DOE-2,127.00,137.43,96.20,41.23,6,4,0,Yes
+ Zone Information, THERMAL ZONE 21,0.0,13.53,55.00,39.10,12.53,32.50,40.62,1,1,1,11.53,13.53,10.00,55.00,39.10,42.14,3.05,274.32,TARP,DOE-2,90.00,286.51,200.56,85.95,9,7,0,Yes
+ Zone Information, THERMAL ZONE 22,0.0,11.53,32.00,39.10,5.77,26.50,40.62,1,1,1,0.00,11.53,21.00,32.00,39.10,42.14,3.05,386.58,TARP,DOE-2,126.83,137.34,96.14,41.20,6,4,0,Yes
+ Zone Information, THERMAL ZONE 23,0.0,17.53,0.00,0.00,8.77,32.50,1.52,1,1,1,0.00,17.53,0.00,65.00,0.00,3.05,3.05,3473.04,TARP,DOE-2,1139.45,503.10,352.17,150.93,6,4,0,Yes
+ Zone Information, THERMAL ZONE 3,0.0,11.53,43.50,21.10,5.76,37.75,22.62,1,10,1,0.00,11.53,32.00,43.50,21.10,24.14,3.05,404.15,TARP,DOE-2,132.60,140.39,98.27,42.12,6,4,0,Yes
+ Zone Information, THERMAL ZONE 4,0.0,0.00,54.97,6.10,9.14,59.32,7.62,1,1,1,0.00,17.53,54.97,65.00,6.10,9.14,3.05,534.84,TARP,DOE-2,175.47,167.91,117.54,50.37,8,6,0,Yes
+ Zone Information, THERMAL ZONE 5,0.0,11.53,21.00,6.10,5.76,15.49,7.62,1,1,1,0.00,11.53,9.97,21.00,6.10,9.14,3.05,387.10,TARP,DOE-2,127.00,137.43,96.20,41.23,6,4,0,Yes
+ Zone Information, THERMAL ZONE 6,0.0,0.00,43.50,6.10,5.77,49.24,7.62,1,1,1,0.00,11.53,43.50,55.00,6.10,9.14,3.05,403.62,TARP,DOE-2,132.42,140.30,98.21,42.09,6,4,0,Yes
+ Zone Information, THERMAL ZONE 7,0.0,13.53,55.00,6.10,12.53,32.50,7.62,1,1,1,11.53,13.53,10.00,55.00,6.10,9.14,3.05,274.32,TARP,DOE-2,90.00,286.51,200.56,85.95,9,7,0,Yes
+ Zone Information, THERMAL ZONE 8,0.0,11.53,32.00,6.10,5.77,26.50,7.62,1,1,1,0.00,11.53,21.00,32.00,6.10,9.14,3.05,386.58,TARP,DOE-2,126.83,137.34,96.14,41.20,6,4,0,Yes
+ Zone Information, THERMAL ZONE 9,0.0,11.53,43.50,6.10,5.77,37.75,7.62,1,1,1,0.00,11.53,32.00,43.50,6.10,9.14,3.05,404.15,TARP,DOE-2,132.60,140.39,98.27,42.12,6,4,0,Yes
+! <Zone Internal Gains Nominal>,Zone Name, Floor Area {m2},# Occupants,Area per Occupant {m2/person},Occupant per Area {person/m2},Interior Lighting {W/m2},Electric Load {W/m2},Gas Load {W/m2},Other Load {W/m2},Hot Water Eq {W/m2},Steam Equipment {W/m2},Sum Loads per Area {W/m2},Outdoor Controlled Baseboard Heat
+ Zone Internal Gains Nominal, THERMAL ZONE 1,1139.45,0.0,N/A,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,No
+ Zone Internal Gains Nominal, THERMAL ZONE 10,126.83,3.6,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 11,90.00,0.0,N/A,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,No
+ Zone Internal Gains Nominal, THERMAL ZONE 12,175.13,5.0,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 13,175.13,5.0,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 14,132.60,3.8,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 15,175.47,5.0,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 16,132.42,3.7,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 17,127.00,3.6,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 18,175.47,5.0,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 19,132.42,3.7,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 2,175.13,5.0,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 20,127.00,3.6,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 21,90.00,0.0,N/A,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,No
+ Zone Internal Gains Nominal, THERMAL ZONE 22,126.83,3.6,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 23,1139.45,0.0,N/A,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,No
+ Zone Internal Gains Nominal, THERMAL ZONE 3,132.60,3.8,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 4,175.47,5.0,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 5,127.00,3.6,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 6,132.42,3.7,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 7,90.00,0.0,N/A,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,No
+ Zone Internal Gains Nominal, THERMAL ZONE 8,126.83,3.6,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+ Zone Internal Gains Nominal, THERMAL ZONE 9,132.60,3.8,35.324,2.831E-002,0.000,8.150,0.000,0.000,0.000,0.000,8.150,No
+! <People Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Number of People {},People/Floor Area {person/m2},Floor Area per person {m2/person},Fraction Radiant,Fraction Convected,Sensible Fraction Calculation,Activity level,ASHRAE 55 Warnings,Carbon Dioxide Generation Rate,Nominal Minimum Number of People,Nominal Maximum Number of People
+ People Internal Gains Nominal, SPACE 101 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 2,175.13,5.0,5.0,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,5
+ People Internal Gains Nominal, SPACE 108 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 3,132.60,3.8,3.8,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 107 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 4,175.47,5.0,5.0,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,5
+ People Internal Gains Nominal, SPACE 102 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 5,127.00,3.6,3.6,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 106 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 6,132.42,3.7,3.7,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 104 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 8,126.83,3.6,3.6,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 105 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 9,132.60,3.8,3.8,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 109 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 10,126.83,3.6,3.6,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 121 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 12,175.13,5.0,5.0,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,5
+ People Internal Gains Nominal, SPACE 111 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 13,175.13,5.0,5.0,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,5
+ People Internal Gains Nominal, SPACE 118 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 14,132.60,3.8,3.8,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 112 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 15,175.47,5.0,5.0,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,5
+ People Internal Gains Nominal, SPACE 113 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 16,132.42,3.7,3.7,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 114 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 17,127.00,3.6,3.6,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 115 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 18,175.47,5.0,5.0,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,5
+ People Internal Gains Nominal, SPACE 116 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 19,132.42,3.7,3.7,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 117 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 20,127.00,3.6,3.6,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+ People Internal Gains Nominal, SPACE 120 PEOPLE 1,MIDRISEAPARTMENT APARTMENT OCC 2,THERMAL ZONE 22,126.83,3.6,3.6,2.831E-002,35.324,0.300,0.700,AutoCalculate,MIDRISEAPARTMENT ACTIVITY 2,No,3.8200E-008,1,4
+! <ElectricEquipment Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Equipment Level {W},Equipment/Floor Area {W/m2},Equipment per person {W/person},Fraction Latent,Fraction Radiant,Fraction Lost,Fraction Convected,End-Use SubCategory,Nominal Minimum Equipment Level {W},Nominal Maximum Equipment Level {W}
+ ElectricEquipment Internal Gains Nominal, SPACE 101 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 2,175.13,5.0,1427.285,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1427.285
+ ElectricEquipment Internal Gains Nominal, SPACE 108 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 3,132.60,3.8,1080.649,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1080.649
+ ElectricEquipment Internal Gains Nominal, SPACE 107 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 4,175.47,5.0,1430.105,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1430.105
+ ElectricEquipment Internal Gains Nominal, SPACE 102 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 5,127.00,3.6,1035.074,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1035.074
+ ElectricEquipment Internal Gains Nominal, SPACE 106 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 6,132.42,3.7,1079.240,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1079.240
+ ElectricEquipment Internal Gains Nominal, SPACE 104 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 8,126.83,3.6,1033.665,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1033.665
+ ElectricEquipment Internal Gains Nominal, SPACE 105 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 9,132.60,3.8,1080.649,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1080.649
+ ElectricEquipment Internal Gains Nominal, SPACE 109 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 10,126.83,3.6,1033.665,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1033.665
+ ElectricEquipment Internal Gains Nominal, SPACE 121 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 12,175.13,5.0,1427.285,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1427.285
+ ElectricEquipment Internal Gains Nominal, SPACE 111 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 13,175.13,5.0,1427.285,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1427.285
+ ElectricEquipment Internal Gains Nominal, SPACE 118 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 14,132.60,3.8,1080.649,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1080.649
+ ElectricEquipment Internal Gains Nominal, SPACE 112 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 15,175.47,5.0,1430.105,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1430.105
+ ElectricEquipment Internal Gains Nominal, SPACE 113 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 16,132.42,3.7,1079.240,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1079.240
+ ElectricEquipment Internal Gains Nominal, SPACE 114 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 17,127.00,3.6,1035.074,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1035.074
+ ElectricEquipment Internal Gains Nominal, SPACE 115 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 18,175.47,5.0,1430.105,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1430.105
+ ElectricEquipment Internal Gains Nominal, SPACE 116 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 19,132.42,3.7,1079.240,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1079.240
+ ElectricEquipment Internal Gains Nominal, SPACE 117 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 20,127.00,3.6,1035.074,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1035.074
+ ElectricEquipment Internal Gains Nominal, SPACE 120 ELECTRIC EQUIPMENT 1,MURB APPLIANCES AND LIGHTING,THERMAL ZONE 22,126.83,3.6,1033.665,8.150,287.893,0.000,0.500,0.000,0.500,General,0.000,1033.665
+! <Shadowing/Sun Position Calculations Annual Simulations>, Shading Calculation Method, Shading Calculation Update Frequency Method, Shading Calculation Update Frequency {days}, Maximum Figures in Shadow Overlap Calculations {}, Polygon Clipping Algorithm, Pixel Counting Resolution, Sky Diffuse Modeling Algorithm, Output External Shading Calculation Results, Disable Self-Shading Within Shading Zone Groups, Disable Self-Shading From Shading Zone Groups to Other Zones
+Shadowing/Sun Position Calculations Annual Simulations,PolygonClipping,Periodic,7,15000,SutherlandHodgman,512,SimpleSkyDiffuseModeling,No,No,No
+! <Water Heater Information>,Type,Name,Volume {m3},Maximum Capacity {W},Standard Rated Recovery Efficiency, Standard Rated Energy Factor
+! <ZoneInfiltration Airflow Stats Nominal>,Name,Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/Exterior Surface Area {m3/s-m2},ACH - Air Changes per Hour,Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m}, Equation D - Velocity Squared Term Coefficient {s2/m2}
+ ZoneInfiltration Airflow Stats Nominal, SPACE 201 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 1,1139.45,0.0,0.407,3.575E-004,2.480E-004,0.422,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 201 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 1,1139.45,0.0,0.407,3.575E-004,2.480E-004,0.422,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 109 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 10,126.83,3.6,3.406E-002,2.685E-004,2.480E-004,0.317,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 109 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 10,126.83,3.6,3.406E-002,2.685E-004,2.480E-004,0.317,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 110 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 11,90.00,0.0,7.105E-002,7.894E-004,2.480E-004,0.932,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 110 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 11,90.00,0.0,7.105E-002,7.894E-004,2.480E-004,0.932,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 121 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 12,175.13,5.0,8.502E-002,4.855E-004,2.480E-004,0.573,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 121 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 12,175.13,5.0,8.502E-002,4.855E-004,2.480E-004,0.573,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 111 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 13,175.13,5.0,4.159E-002,2.375E-004,2.480E-004,0.281,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 111 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 13,175.13,5.0,4.159E-002,2.375E-004,2.480E-004,0.281,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 118 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 14,132.60,3.8,6.769E-002,5.105E-004,2.480E-004,0.603,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 118 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 14,132.60,3.8,6.769E-002,5.105E-004,2.480E-004,0.603,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 112 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 15,175.47,5.0,4.164E-002,2.373E-004,2.480E-004,0.280,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 112 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 15,175.47,5.0,4.164E-002,2.373E-004,2.480E-004,0.280,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 113 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 16,132.42,3.7,3.479E-002,2.627E-004,2.480E-004,0.310,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 113 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 16,132.42,3.7,3.479E-002,2.627E-004,2.480E-004,0.310,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 114 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 17,127.00,3.6,3.408E-002,2.683E-004,2.480E-004,0.317,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 114 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 17,127.00,3.6,3.408E-002,2.683E-004,2.480E-004,0.317,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 115 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 18,175.47,5.0,8.515E-002,4.853E-004,2.480E-004,0.573,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 115 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 18,175.47,5.0,8.515E-002,4.853E-004,2.480E-004,0.573,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 116 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 19,132.42,3.7,6.763E-002,5.107E-004,2.480E-004,0.603,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 116 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 19,132.42,3.7,6.763E-002,5.107E-004,2.480E-004,0.603,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 101 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 2,175.13,5.0,4.159E-002,2.375E-004,2.480E-004,0.281,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 101 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 2,175.13,5.0,4.159E-002,2.375E-004,2.480E-004,0.281,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 117 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 20,127.00,3.6,6.557E-002,5.163E-004,2.480E-004,0.610,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 117 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 20,127.00,3.6,6.557E-002,5.163E-004,2.480E-004,0.610,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 119 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 21,90.00,0.0,9.336E-002,1.037E-003,2.480E-004,1.225,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 119 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 21,90.00,0.0,9.336E-002,1.037E-003,2.480E-004,1.225,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 120 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 22,126.83,3.6,6.551E-002,5.165E-004,2.480E-004,0.610,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 120 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 22,126.83,3.6,6.551E-002,5.165E-004,2.480E-004,0.610,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 122 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 23,1139.45,0.0,0.407,3.575E-004,2.480E-004,0.422,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 122 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 23,1139.45,0.0,0.407,3.575E-004,2.480E-004,0.422,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 108 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 3,132.60,3.8,3.481E-002,2.625E-004,2.480E-004,0.310,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 108 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 3,132.60,3.8,3.481E-002,2.625E-004,2.480E-004,0.310,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 107 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 4,175.47,5.0,4.164E-002,2.373E-004,2.480E-004,0.280,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 107 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 4,175.47,5.0,4.164E-002,2.373E-004,2.480E-004,0.280,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 102 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 5,127.00,3.6,3.408E-002,2.683E-004,2.480E-004,0.317,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 102 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 5,127.00,3.6,3.408E-002,2.683E-004,2.480E-004,0.317,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 106 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 6,132.42,3.7,3.479E-002,2.627E-004,2.480E-004,0.310,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 106 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 6,132.42,3.7,3.479E-002,2.627E-004,2.480E-004,0.310,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 103 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 7,90.00,0.0,7.105E-002,7.894E-004,2.480E-004,0.932,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 103 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 7,90.00,0.0,7.105E-002,7.894E-004,2.480E-004,0.932,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 104 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 8,126.83,3.6,3.406E-002,2.685E-004,2.480E-004,0.317,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 104 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 8,126.83,3.6,3.406E-002,2.685E-004,2.480E-004,0.317,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 105 HVAC OFF INFILTRATION,INFILTRATION HVAC OFF SCHEDULE,THERMAL ZONE 9,132.60,3.8,3.481E-002,2.625E-004,2.480E-004,0.310,0.107,1.199E-002,0.000,1.348E-002
+ ZoneInfiltration Airflow Stats Nominal, SPACE 105 HVAC ON INFILTRATION,INFILTRATION HVAC ON SCHEDULE,THERMAL ZONE 9,132.60,3.8,3.481E-002,2.625E-004,2.480E-004,0.310,0.107,1.199E-002,0.000,1.348E-002
+! <AirFlow Model>, Simple
+ AirFlow Model, Simple
+! <RoomAir Model>, Zone Name, Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
+RoomAir Model,THERMAL ZONE 1,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 10,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 11,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 12,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 13,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 14,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 15,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 16,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 17,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 18,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 19,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 2,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 20,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 21,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 22,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 23,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 3,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 4,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 5,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 6,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 7,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 8,Mixing/Well-Stirred
+RoomAir Model,THERMAL ZONE 9,Mixing/Well-Stirred
+! <AirflowNetwork Model:Control>, No Multizone or Distribution/Multizone with Distribution/Multizone without Distribution/Multizone with Distribution only during Fan Operation
+AirflowNetwork Model:Control,NoMultizoneOrDistribution
+! <Zone Volume Capacitance Multiplier>, Sensible Heat Capacity Multiplier, Moisture Capacity Multiplier, Carbon Dioxide Capacity Multiplier, Generic Contaminant Capacity Multiplier
+Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
+! <Load Timesteps in Zone Design Calculation Averaging Window>, Value
+ Load Timesteps in Zone Design Calculation Averaging Window,    6
+! <Heating Sizing Factor Information>, Sizing Factor ID, Value
+ Heating Sizing Factor Information, Global,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 1,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 10,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 11,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 12,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 13,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 14,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 15,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 16,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 17,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 18,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 19,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 2,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 20,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 21,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 22,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 23,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 3,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 4,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 5,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 6,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 7,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 8,   1.2500    
+ Heating Sizing Factor Information, Zone THERMAL ZONE 9,   1.2500    
+! <Cooling Sizing Factor Information>, Sizing Factor ID, Value
+ Cooling Sizing Factor Information, Global,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 1,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 10,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 11,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 12,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 13,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 14,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 15,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 16,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 17,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 18,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 19,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 2,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 20,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 21,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 22,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 23,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 3,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 4,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 5,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 6,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 7,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 8,   1.1500    
+ Cooling Sizing Factor Information, Zone THERMAL ZONE 9,   1.1500    
+! <Zone Sizing Information>, Zone Name, Load Type, Calc Des Load {W}, User Des Load {W}, Calc Des Air Flow Rate {m3/s}, User Des Air Flow Rate {m3/s}, Design Day Name, Date/Time of Peak, Temperature at Peak {C}, Humidity Ratio at Peak {kgWater/kgDryAir}, Floor Area {m2}, # Occupants, Calc Outdoor Air Flow Rate {m3/s}, Calc DOAS Heat Addition Rate {W}
+ Zone Sizing Information, THERMAL ZONE 1, Cooling, 22770.25797, 26185.79667, 1.84606, 2.12297, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:10:00, 29.31800, 1.35616E-002, 1139.45000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 1, Heating, 80939.98578, 101174.98223, 3.45700, 4.32125, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 1139.45000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 10, Cooling, 53224.26770, 61207.90785, 4.34925, 5.00164, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 17:10:00, 28.54300, 1.35602E-002, 126.83000, 3.59044, 0.10771, 0.00000
+ Zone Sizing Information, THERMAL ZONE 10, Heating, 132143.18772, 165178.98464, 5.66031, 7.07539, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 126.83000, 3.59044, 0.10771, 0.00000
+ Zone Sizing Information, THERMAL ZONE 11, Cooling, 139811.72419, 160783.48282, 11.42564, 13.13949, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 17:10:00, 28.54300, 1.35602E-002, 90.00000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 11, Heating, 253989.12415, 317486.40519, 10.88484, 13.60604, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 90.00000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 12, Cooling, 7733.82548, 8893.89930, 0.63205, 0.72686, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 15:30:00, 29.72100, 1.35623E-002, 175.12705, 4.95769, 1.48731E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 12, Heating, 21963.80863, 27454.76079, 0.94078, 1.17597, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 175.12705, 4.95769, 1.48731E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 13, Cooling, 61703.17752, 70958.65415, 5.04206, 5.79837, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:10:00, 29.31800, 1.35616E-002, 175.12705, 4.95769, 0.14873, 0.00000
+ Zone Sizing Information, THERMAL ZONE 13, Heating, 164746.52397, 205933.15496, 7.05586, 8.81982, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 175.12705, 4.95769, 0.14873, 0.00000
+ Zone Sizing Information, THERMAL ZONE 14, Cooling, 6507.47897, 7483.60081, 0.53183, 0.61160, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:00:00, 29.44200, 1.35618E-002, 132.59500, 3.75364, 1.12609E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 14, Heating, 17247.32346, 21559.15433, 0.73878, 0.92348, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 132.59500, 3.75364, 1.12609E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 15, Cooling, 60774.91719, 69891.15476, 4.96621, 5.71114, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:30:00, 29.07000, 1.35611E-002, 175.47295, 4.96748, 0.14902, 0.00000
+ Zone Sizing Information, THERMAL ZONE 15, Heating, 164976.45678, 206220.57098, 7.06570, 8.83212, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 175.47295, 4.96748, 0.14902, 0.00000
+ Zone Sizing Information, THERMAL ZONE 16, Cooling, 55610.32334, 63951.87184, 4.54422, 5.22585, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 17:10:00, 28.54300, 1.35602E-002, 132.42205, 3.74875, 0.11246, 0.00000
+ Zone Sizing Information, THERMAL ZONE 16, Heating, 135438.14260, 169297.67826, 5.80131, 7.25164, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 132.42205, 3.74875, 0.11246, 0.00000
+ Zone Sizing Information, THERMAL ZONE 17, Cooling, 53972.60896, 62068.50031, 4.41040, 5.07196, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 17:10:00, 28.54300, 1.35602E-002, 127.00295, 3.59534, 0.10786, 0.00000
+ Zone Sizing Information, THERMAL ZONE 17, Heating, 132340.53833, 165425.67291, 5.66877, 7.08596, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 127.00295, 3.59534, 0.10786, 0.00000
+ Zone Sizing Information, THERMAL ZONE 18, Cooling, 7623.92764, 8767.51679, 0.62307, 0.71653, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 15:30:00, 29.72100, 1.35623E-002, 175.47295, 4.96748, 1.49024E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 18, Heating, 21997.00338, 27496.25423, 0.94220, 1.17775, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 175.47295, 4.96748, 1.49024E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 19, Cooling, 6571.78341, 7557.55092, 0.53708, 0.61765, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:00:00, 29.44200, 1.35618E-002, 132.42205, 3.74875, 1.12462E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 19, Heating, 17241.08670, 21551.35837, 0.73851, 0.92314, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 132.42205, 3.74875, 1.12462E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 2, Cooling, 4609.82567, 5301.29952, 0.37668, 0.43319, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 15:50:00, 29.53500, 1.35619E-002, 175.12705, 4.95769, 1.48731E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 2, Heating, 15355.52471, 19194.40589, 0.65759, 0.82199, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 175.12705, 4.95769, 1.48731E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 20, Cooling, 6362.17515, 7316.50143, 0.51995, 0.59795, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:00:00, 29.44200, 1.35618E-002, 127.00295, 3.59534, 1.07860E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 20, Heating, 16778.81414, 20973.51768, 0.71872, 0.89840, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 127.00295, 3.59534, 1.07860E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 21, Cooling, 14921.36337, 17159.56788, 1.21953, 1.40246, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 17:00:00, 28.69800, 1.35605E-002, 90.00000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 21, Heating, 28676.93609, 35846.17012, 1.22873, 1.53591, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 90.00000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 22, Cooling, 6295.82539, 7240.19920, 0.51453, 0.59171, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:00:00, 29.44200, 1.35618E-002, 126.83000, 3.59044, 1.07713E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 22, Heating, 16757.71504, 20947.14380, 0.71782, 0.89727, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 126.83000, 3.59044, 1.07713E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 23, Cooling, 23661.68278, 27210.93520, 1.91829, 2.20604, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:20:00, 29.19400, 1.35613E-002, 1139.45000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 23, Heating, 78948.34070, 98685.42588, 3.37188, 4.21485, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 1139.45000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 3, Cooling, 54996.49603, 63245.97043, 4.49406, 5.16817, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 17:10:00, 28.54300, 1.35602E-002, 132.59500, 3.75364, 0.11261, 0.00000
+ Zone Sizing Information, THERMAL ZONE 3, Heating, 135418.43807, 169273.04759, 5.80045, 7.25056, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 132.59500, 3.75364, 0.11261, 0.00000
+ Zone Sizing Information, THERMAL ZONE 4, Cooling, 4530.01549, 5209.51781, 0.37016, 0.42569, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:10:00, 29.31800, 1.35616E-002, 175.47295, 4.96748, 1.49024E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 4, Heating, 15377.12751, 19221.40938, 0.65851, 0.82314, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 175.47295, 4.96748, 1.49024E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 5, Cooling, 4101.07279, 4716.23371, 0.33511, 0.38538, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:40:00, 28.94600, 1.35609E-002, 127.00295, 3.59534, 1.07860E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 5, Heating, 12371.40141, 15464.25176, 0.52988, 0.66235, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 127.00295, 3.59534, 1.07860E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 6, Cooling, 4208.71404, 4840.02114, 0.34391, 0.39550, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 17:10:00, 28.54300, 1.35602E-002, 132.42205, 3.74875, 1.12462E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 6, Heating, 12656.58862, 15820.73578, 0.54208, 0.67760, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 132.42205, 3.74875, 1.12462E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 7, Cooling, 11530.74031, 13260.35136, 0.94227, 1.08361, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 17:10:00, 28.54300, 1.35602E-002, 90.00000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 7, Heating, 24256.34615, 30320.43269, 1.03955, 1.29944, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 90.00000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, THERMAL ZONE 8, Cooling, 4038.62466, 4644.41835, 0.33001, 0.37951, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 16:40:00, 28.94600, 1.35609E-002, 126.83000, 3.59044, 1.07713E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 8, Heating, 12355.01794, 15443.77242, 0.52918, 0.66148, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 126.83000, 3.59044, 1.07713E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 9, Cooling, 4158.61730, 4782.40989, 0.33982, 0.39079, MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB, 7/21 17:10:00, 28.54300, 1.35602E-002, 132.59500, 3.75364, 1.12609E-002, 0.00000
+ Zone Sizing Information, THERMAL ZONE 9, Heating, 12653.87573, 15817.34466, 0.54197, 0.67746, MONTREAL INT'L ANN HTG 99.6% CONDNS DB, 1/21 08:00:00, -23.70000, 4.44277E-004, 132.59500, 3.75364, 1.12609E-002, 0.00000
+! <Component Sizing Information>, Component Type, Component Name, Input Field Description, Value
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD, Design Size Heating Design Capacity [W], 101174.98223
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP, Design Size Cooling Supply Air Flow Rate [m3/s], 4.32125
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP, Design Size Heating Supply Air Flow Rate [m3/s], 4.32125
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP, Design Size No Load Supply Air Flow Rate [m3/s], 4.32125
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL, Design Size Rated Air Flow Rate [m3/s], 4.32125
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL, Design Size Gross Rated Total Cooling Capacity [W], 71532.05987
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+! <DX Cooling Coil Standard Rating Information>, Component Type, Component Name, Standard Rating (Net) Cooling Capacity {W}, Standard Rated Net COP {W/W}, EER {Btu/W-h}, SEER User {Btu/W-h}, SEER Standard {Btu/W-h}, IEER {Btu/W-h}
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL, 68370.6, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL, 67674.4, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL, Design Size Rated Air Flow Rate [m3/s], 4.32125
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL, Design Size Gross Rated Heating Capacity [W], 71532.05987
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL, Design Size Resistive Defrost Heater Capacity [W], 71532.05987
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+! <DX Heating Coil Standard Rating Information>, Component Type, Component Name, High Temperature Heating (net) Rating Capacity {W}, Low Temperature Heating (net) Rating Capacity {W}, HSPF {Btu/W-h}, Region Number
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL, 3341.6, 3341.6, 2.87, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL, 4037.8, 4037.8, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN, Design Size Maximum Flow Rate [m3/s], 4.32125
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL, Design Size Nominal Capacity [W], 100863.13352
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 6, Design Size Heating Design Capacity [W], 165178.98464
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 6, Design Size Cooling Supply Air Flow Rate [m3/s], 7.07539
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 6, Design Size Heating Supply Air Flow Rate [m3/s], 7.07539
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 6, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 6, Design Size No Load Supply Air Flow Rate [m3/s], 7.07539
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 6, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.10771
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 6, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.10771
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 6, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.10771
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 6, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 6, Design Size Rated Air Flow Rate [m3/s], 7.07539
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 6, Design Size Gross Rated Total Cooling Capacity [W], 117122.81211
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 6, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 6, 111946.4, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 6, 110806.5, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 6, Design Size Rated Air Flow Rate [m3/s], 7.07539
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 6, Design Size Gross Rated Heating Capacity [W], 117122.81211
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 6, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 6, Design Size Resistive Defrost Heater Capacity [W], 117122.81211
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 6, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 6, 5471.4, 5471.4, 2.94, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 6, 6611.2, 6611.2, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 6, Design Size Maximum Flow Rate [m3/s], 7.07539
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 6, Design Size Nominal Capacity [W], 170322.58213
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 7, Design Size Heating Design Capacity [W], 317486.40519
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 7, Design Size Cooling Supply Air Flow Rate [m3/s], 13.60604
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 7, Design Size Heating Supply Air Flow Rate [m3/s], 13.60604
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 7, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 7, Design Size No Load Supply Air Flow Rate [m3/s], 13.60604
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 7, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 7, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 7, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 7, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 7, Design Size Rated Air Flow Rate [m3/s], 13.60604
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 7, Design Size Gross Rated Total Cooling Capacity [W], 225228.35598
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 7, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 7, 215274.0, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 7, 213082.0, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 7, Design Size Rated Air Flow Rate [m3/s], 13.60604
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 7, Design Size Gross Rated Heating Capacity [W], 225228.35598
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 7, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 7, Design Size Resistive Defrost Heater Capacity [W], 225228.35598
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 7, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 7, 10521.6, 10521.6, 2.91, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 7, 12713.5, 12713.5, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 7, Design Size Maximum Flow Rate [m3/s], 13.60604
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 7, Design Size Nominal Capacity [W], 316321.29533
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 11, Design Size Heating Design Capacity [W], 27454.76079
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 11, Design Size Cooling Supply Air Flow Rate [m3/s], 1.17597
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 11, Design Size Heating Supply Air Flow Rate [m3/s], 1.17597
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 11, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 11, Design Size No Load Supply Air Flow Rate [m3/s], 1.17597
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 11, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.48731E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 11, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.48731E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 11, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.48731E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 11, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 11, Design Size Rated Air Flow Rate [m3/s], 1.17597
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 11, Design Size Gross Rated Total Cooling Capacity [W], 19466.55796
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 11, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 11, 18606.2, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 11, 18416.7, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 11, Design Size Rated Air Flow Rate [m3/s], 1.17597
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 11, Design Size Gross Rated Heating Capacity [W], 19466.55796
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 11, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 11, Design Size Resistive Defrost Heater Capacity [W], 19466.55796
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 11, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 11, 909.4, 909.4, 3.11, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 11, 1098.8, 1098.8, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 11, Design Size Maximum Flow Rate [m3/s], 1.17597
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 11, Design Size Nominal Capacity [W], 28150.97326
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 9, Design Size Heating Design Capacity [W], 205933.15496
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 9, Design Size Cooling Supply Air Flow Rate [m3/s], 8.81982
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 9, Design Size Heating Supply Air Flow Rate [m3/s], 8.81982
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 9, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 9, Design Size No Load Supply Air Flow Rate [m3/s], 8.81982
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 9, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.14873
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 9, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.14873
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 9, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.14873
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 9, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 9, Design Size Rated Air Flow Rate [m3/s], 8.81982
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 9, Design Size Gross Rated Total Cooling Capacity [W], 145999.34130
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 9, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 9, 139546.6, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 9, 138125.8, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 9, Design Size Rated Air Flow Rate [m3/s], 8.81982
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 9, Design Size Gross Rated Heating Capacity [W], 145999.34130
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 9, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 9, Design Size Resistive Defrost Heater Capacity [W], 145999.34130
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 9, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 9, 6820.4, 6820.4, 2.94, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 9, 8241.2, 8241.2, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 9, Design Size Maximum Flow Rate [m3/s], 8.81982
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 9, Design Size Nominal Capacity [W], 213099.41116
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 3, Design Size Heating Design Capacity [W], 21559.15433
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 3, Design Size Cooling Supply Air Flow Rate [m3/s], 0.92348
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 3, Design Size Heating Supply Air Flow Rate [m3/s], 0.92348
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 3, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 3, Design Size No Load Supply Air Flow Rate [m3/s], 0.92348
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 3, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.12609E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 3, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.12609E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 3, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.12609E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 3, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 3, Design Size Rated Air Flow Rate [m3/s], 0.92348
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 3, Design Size Gross Rated Total Cooling Capacity [W], 15286.79696
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 3, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 3, 14611.2, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 3, 14462.4, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 3, Design Size Rated Air Flow Rate [m3/s], 0.92348
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 3, Design Size Gross Rated Heating Capacity [W], 15286.79696
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 3, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 3, Design Size Resistive Defrost Heater Capacity [W], 15286.79696
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 3, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 3, 714.1, 714.1, 3.22, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 3, 862.9, 862.9, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 3, Design Size Maximum Flow Rate [m3/s], 0.92348
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 3, Design Size Nominal Capacity [W], 22084.09255
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 13, Design Size Heating Design Capacity [W], 206220.57098
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 13, Design Size Cooling Supply Air Flow Rate [m3/s], 8.83212
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 13, Design Size Heating Supply Air Flow Rate [m3/s], 8.83212
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 13, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 13, Design Size No Load Supply Air Flow Rate [m3/s], 8.83212
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 13, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.14902
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 13, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.14902
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 13, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.14902
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 13, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 13, Design Size Rated Air Flow Rate [m3/s], 8.83212
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 13, Design Size Gross Rated Total Cooling Capacity [W], 146202.98540
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 13, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 13, 139741.3, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 13, 138318.4, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 13, Design Size Rated Air Flow Rate [m3/s], 8.83212
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 13, Design Size Gross Rated Heating Capacity [W], 146202.98540
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 13, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 13, Design Size Resistive Defrost Heater Capacity [W], 146202.98540
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 13, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 13, 6829.9, 6829.9, 2.94, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 13, 8252.7, 8252.7, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 13, Design Size Maximum Flow Rate [m3/s], 8.83212
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 13, Design Size Nominal Capacity [W], 213401.31999
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 14, Design Size Heating Design Capacity [W], 169297.67826
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 14, Design Size Cooling Supply Air Flow Rate [m3/s], 7.25164
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 14, Design Size Heating Supply Air Flow Rate [m3/s], 7.25164
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 14, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 14, Design Size No Load Supply Air Flow Rate [m3/s], 7.25164
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 14, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.11246
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 14, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.11246
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 14, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.11246
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 14, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 14, Design Size Rated Air Flow Rate [m3/s], 7.25164
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 14, Design Size Gross Rated Total Cooling Capacity [W], 120040.31225
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 14, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 14, 114734.9, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 14, 113566.7, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 14, Design Size Rated Air Flow Rate [m3/s], 7.25164
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 14, Design Size Gross Rated Heating Capacity [W], 120040.31225
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 14, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 14, Design Size Resistive Defrost Heater Capacity [W], 120040.31225
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 14, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 14, 5607.7, 5607.7, 2.93, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 14, 6775.9, 6775.9, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 14, Design Size Maximum Flow Rate [m3/s], 7.25164
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 14, Design Size Nominal Capacity [W], 174677.23742
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 15, Design Size Heating Design Capacity [W], 165425.67291
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 15, Design Size Cooling Supply Air Flow Rate [m3/s], 7.08596
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 15, Design Size Heating Supply Air Flow Rate [m3/s], 7.08596
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 15, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 15, Design Size No Load Supply Air Flow Rate [m3/s], 7.08596
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 15, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.10786
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 15, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.10786
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 15, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.10786
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 15, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 15, Design Size Rated Air Flow Rate [m3/s], 7.08596
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 15, Design Size Gross Rated Total Cooling Capacity [W], 117297.76633
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 15, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 15, 112113.6, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 15, 110972.0, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 15, Design Size Rated Air Flow Rate [m3/s], 7.08596
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 15, Design Size Gross Rated Heating Capacity [W], 117297.76633
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 15, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 15, Design Size Resistive Defrost Heater Capacity [W], 117297.76633
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 15, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 15, 5479.6, 5479.6, 2.94, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 15, 6621.1, 6621.1, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 15, Design Size Maximum Flow Rate [m3/s], 7.08596
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 15, Design Size Nominal Capacity [W], 170576.20485
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 1, Design Size Heating Design Capacity [W], 27496.25423
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 1, Design Size Cooling Supply Air Flow Rate [m3/s], 1.17775
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 1, Design Size Heating Supply Air Flow Rate [m3/s], 1.17775
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 1, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 1, Design Size No Load Supply Air Flow Rate [m3/s], 1.17775
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 1, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.49024E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 1, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.49024E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 1, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.49024E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 1, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 1, Design Size Rated Air Flow Rate [m3/s], 1.17775
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 1, Design Size Gross Rated Total Cooling Capacity [W], 19495.96941
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 1, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 1, 18634.3, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 1, 18444.6, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 1, Design Size Rated Air Flow Rate [m3/s], 1.17775
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 1, Design Size Gross Rated Heating Capacity [W], 19495.96941
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 1, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 1, Design Size Resistive Defrost Heater Capacity [W], 19495.96941
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 1, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 1, 910.8, 910.8, 3.11, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 1, 1100.5, 1100.5, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 1, Design Size Maximum Flow Rate [m3/s], 1.17775
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 1, Design Size Nominal Capacity [W], 28193.87872
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 2, Design Size Heating Design Capacity [W], 21551.35837
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 2, Design Size Cooling Supply Air Flow Rate [m3/s], 0.92314
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 2, Design Size Heating Supply Air Flow Rate [m3/s], 0.92314
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 2, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 2, Design Size No Load Supply Air Flow Rate [m3/s], 0.92314
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 2, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.12462E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 2, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.12462E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 2, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.12462E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 2, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 2, Design Size Rated Air Flow Rate [m3/s], 0.92314
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 2, Design Size Gross Rated Total Cooling Capacity [W], 15281.28456
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 2, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 2, 14605.9, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 2, 14457.2, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 2, Design Size Rated Air Flow Rate [m3/s], 0.92314
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 2, Design Size Gross Rated Heating Capacity [W], 15281.28456
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 2, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 2, Design Size Resistive Defrost Heater Capacity [W], 15281.28456
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 2, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 2, 713.9, 713.9, 3.22, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 2, 862.6, 862.6, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 2, Design Size Maximum Flow Rate [m3/s], 0.92314
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 2, Design Size Nominal Capacity [W], 22075.55044
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 8, Design Size Heating Design Capacity [W], 19194.40589
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 8, Design Size Cooling Supply Air Flow Rate [m3/s], 0.82199
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 8, Design Size Heating Supply Air Flow Rate [m3/s], 0.82199
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 8, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 8, Design Size No Load Supply Air Flow Rate [m3/s], 0.82199
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 8, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.48731E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 8, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.48731E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 8, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.48731E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 8, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 8, Design Size Rated Air Flow Rate [m3/s], 0.82199
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 8, Design Size Gross Rated Total Cooling Capacity [W], 13606.81006
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 8, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 8, 13005.4, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 8, 12873.0, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 8, Design Size Rated Air Flow Rate [m3/s], 0.82199
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 8, Design Size Gross Rated Heating Capacity [W], 13606.81006
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 8, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 8, Design Size Resistive Defrost Heater Capacity [W], 13606.81006
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 8, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 8, 635.6, 635.6, 3.26, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 8, 768.1, 768.1, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 8, Design Size Maximum Flow Rate [m3/s], 0.82199
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 8, Design Size Nominal Capacity [W], 19915.29579
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 22, Design Size Heating Design Capacity [W], 20973.51768
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 22, Design Size Cooling Supply Air Flow Rate [m3/s], 0.89840
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 22, Design Size Heating Supply Air Flow Rate [m3/s], 0.89840
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 22, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 22, Design Size No Load Supply Air Flow Rate [m3/s], 0.89840
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 22, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.07860E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 22, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.07860E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 22, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.07860E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 22, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 22, Design Size Rated Air Flow Rate [m3/s], 0.89840
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 22, Design Size Gross Rated Total Cooling Capacity [W], 14871.76988
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 22, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 22, 14214.5, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 22, 14069.8, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 22, Design Size Rated Air Flow Rate [m3/s], 0.89840
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 22, Design Size Gross Rated Heating Capacity [W], 14871.76988
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 22, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 22, Design Size Resistive Defrost Heater Capacity [W], 14871.76988
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 22, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 22, 694.7, 694.7, 3.22, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 22, 839.5, 839.5, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 22, Design Size Maximum Flow Rate [m3/s], 0.89840
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 22, Design Size Nominal Capacity [W], 21475.36102
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 20, Design Size Heating Design Capacity [W], 35846.17012
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 20, Design Size Cooling Supply Air Flow Rate [m3/s], 1.53591
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 20, Design Size Heating Supply Air Flow Rate [m3/s], 1.53591
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 20, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 20, Design Size No Load Supply Air Flow Rate [m3/s], 1.53591
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 20, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 20, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 20, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 20, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 20, Design Size Rated Air Flow Rate [m3/s], 1.53591
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 20, Design Size Gross Rated Total Cooling Capacity [W], 25424.74280
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 20, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 20, 24301.0, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 20, 24053.6, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 20, Design Size Rated Air Flow Rate [m3/s], 1.53591
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 20, Design Size Gross Rated Heating Capacity [W], 25424.74280
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 20, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 20, Design Size Resistive Defrost Heater Capacity [W], 25424.74280
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 20, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 20, 1187.7, 1187.7, 3.00, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 20, 1435.2, 1435.2, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 20, Design Size Maximum Flow Rate [m3/s], 1.53591
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 20, Design Size Nominal Capacity [W], 35715.04200
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 21, Design Size Heating Design Capacity [W], 20947.14380
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 21, Design Size Cooling Supply Air Flow Rate [m3/s], 0.89727
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 21, Design Size Heating Supply Air Flow Rate [m3/s], 0.89727
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 21, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 21, Design Size No Load Supply Air Flow Rate [m3/s], 0.89727
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 21, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.07713E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 21, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.07713E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 21, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.07713E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 21, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 21, Design Size Rated Air Flow Rate [m3/s], 0.89727
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 21, Design Size Gross Rated Total Cooling Capacity [W], 14853.06939
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 21, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 21, 14196.6, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 21, 14052.1, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 21, Design Size Rated Air Flow Rate [m3/s], 0.89727
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 21, Design Size Gross Rated Heating Capacity [W], 14853.06939
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 21, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 21, Design Size Resistive Defrost Heater Capacity [W], 14853.06939
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 21, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 21, 693.9, 693.9, 3.23, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 21, 838.4, 838.4, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 21, Design Size Maximum Flow Rate [m3/s], 0.89727
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 21, Design Size Nominal Capacity [W], 21448.29838
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 19, Design Size Heating Design Capacity [W], 98685.42588
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 19, Design Size Cooling Supply Air Flow Rate [m3/s], 4.21485
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 19, Design Size Heating Supply Air Flow Rate [m3/s], 4.21485
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 19, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 19, Design Size No Load Supply Air Flow Rate [m3/s], 4.21485
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 19, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 19, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 19, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 19, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 19, Design Size Rated Air Flow Rate [m3/s], 4.21485
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 19, Design Size Gross Rated Total Cooling Capacity [W], 69770.79677
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 19, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 19, 66687.1, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 19, 66008.1, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 19, Design Size Rated Air Flow Rate [m3/s], 4.21485
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 19, Design Size Gross Rated Heating Capacity [W], 69770.79677
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 19, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 19, Design Size Resistive Defrost Heater Capacity [W], 69770.79677
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 19, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 19, 3259.3, 3259.3, 2.88, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 19, 3938.4, 3938.4, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 19, Design Size Maximum Flow Rate [m3/s], 4.21485
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 19, Design Size Nominal Capacity [W], 98378.02597
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 10, Design Size Heating Design Capacity [W], 169273.04759
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 10, Design Size Cooling Supply Air Flow Rate [m3/s], 7.25056
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 10, Design Size Heating Supply Air Flow Rate [m3/s], 7.25056
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 10, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 10, Design Size No Load Supply Air Flow Rate [m3/s], 7.25056
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 10, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.11261
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 10, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.11261
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 10, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.11261
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 10, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 10, Design Size Rated Air Flow Rate [m3/s], 7.25056
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 10, Design Size Gross Rated Total Cooling Capacity [W], 120022.59499
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 10, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 10, 114718.0, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 10, 113549.9, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 10, Design Size Rated Air Flow Rate [m3/s], 7.25056
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 10, Design Size Gross Rated Heating Capacity [W], 120022.59499
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 10, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 10, Design Size Resistive Defrost Heater Capacity [W], 120022.59499
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 10, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 10, 5606.9, 5606.9, 2.93, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 10, 6774.9, 6774.9, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 10, Design Size Maximum Flow Rate [m3/s], 7.25056
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 10, Design Size Nominal Capacity [W], 174660.36690
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 5, Design Size Heating Design Capacity [W], 19221.40938
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 5, Design Size Cooling Supply Air Flow Rate [m3/s], 0.82314
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 5, Design Size Heating Supply Air Flow Rate [m3/s], 0.82314
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 5, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 5, Design Size No Load Supply Air Flow Rate [m3/s], 0.82314
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 5, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.49024E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 5, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.49024E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 5, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.49024E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 5, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 5, Design Size Rated Air Flow Rate [m3/s], 0.82314
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 5, Design Size Gross Rated Total Cooling Capacity [W], 13625.94014
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 5, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 5, 13023.7, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 5, 12891.1, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 5, Design Size Rated Air Flow Rate [m3/s], 0.82314
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 5, Design Size Gross Rated Heating Capacity [W], 13625.94014
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 5, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 5, Design Size Resistive Defrost Heater Capacity [W], 13625.94014
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 5, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 5, 636.5, 636.5, 3.25, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 5, 769.1, 769.1, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 5, Design Size Maximum Flow Rate [m3/s], 0.82314
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 5, Design Size Nominal Capacity [W], 19943.75379
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 12, Design Size Heating Design Capacity [W], 15464.25176
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 12, Design Size Cooling Supply Air Flow Rate [m3/s], 0.66235
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 12, Design Size Heating Supply Air Flow Rate [m3/s], 0.66235
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 12, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 12, Design Size No Load Supply Air Flow Rate [m3/s], 0.66235
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 12, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.07860E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 12, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.07860E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 12, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.07860E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 12, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 12, Design Size Rated Air Flow Rate [m3/s], 0.66235
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 12, Design Size Gross Rated Total Cooling Capacity [W], 10964.31985
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 12, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 12, 10479.7, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 12, 10373.0, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 12, Design Size Rated Air Flow Rate [m3/s], 0.66235
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 12, Design Size Gross Rated Heating Capacity [W], 10964.31985
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 12, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 12, Design Size Resistive Defrost Heater Capacity [W], 10964.31985
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 12, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 12, 512.2, 512.2, 3.31, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 12, 618.9, 618.9, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 12, Design Size Maximum Flow Rate [m3/s], 0.66235
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 12, Design Size Nominal Capacity [W], 15982.61192
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 18, Design Size Heating Design Capacity [W], 15820.73578
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 18, Design Size Cooling Supply Air Flow Rate [m3/s], 0.67760
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 18, Design Size Heating Supply Air Flow Rate [m3/s], 0.67760
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 18, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 18, Design Size No Load Supply Air Flow Rate [m3/s], 0.67760
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 18, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.12462E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 18, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.12462E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 18, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.12462E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 18, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 18, Design Size Rated Air Flow Rate [m3/s], 0.67760
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 18, Design Size Gross Rated Total Cooling Capacity [W], 11216.75768
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 18, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 18, 10721.0, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 18, 10611.9, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 18, Design Size Rated Air Flow Rate [m3/s], 0.67760
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 18, Design Size Gross Rated Heating Capacity [W], 11216.75768
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 18, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 18, Design Size Resistive Defrost Heater Capacity [W], 11216.75768
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 18, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 18, 524.0, 524.0, 3.30, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 18, 633.2, 633.2, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 18, Design Size Maximum Flow Rate [m3/s], 0.67760
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 18, Design Size Nominal Capacity [W], 16362.08887
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 4, Design Size Heating Design Capacity [W], 30320.43269
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 4, Design Size Cooling Supply Air Flow Rate [m3/s], 1.29944
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 4, Design Size Heating Supply Air Flow Rate [m3/s], 1.29944
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 4, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 4, Design Size No Load Supply Air Flow Rate [m3/s], 1.29944
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 4, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 4, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 4, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 4, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 4, Design Size Rated Air Flow Rate [m3/s], 1.29944
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 4, Design Size Gross Rated Total Cooling Capacity [W], 21510.33488
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 4, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 4, 20559.6, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 4, 20350.3, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 4, Design Size Rated Air Flow Rate [m3/s], 1.29944
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 4, Design Size Gross Rated Heating Capacity [W], 21510.33488
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 4, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 4, Design Size Resistive Defrost Heater Capacity [W], 21510.33488
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 4, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 4, 1004.9, 1004.9, 3.07, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 4, 1214.2, 1214.2, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 4, Design Size Maximum Flow Rate [m3/s], 1.29944
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 4, Design Size Nominal Capacity [W], 30208.95341
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 17, Design Size Heating Design Capacity [W], 15443.77242
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 17, Design Size Cooling Supply Air Flow Rate [m3/s], 0.66148
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 17, Design Size Heating Supply Air Flow Rate [m3/s], 0.66148
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 17, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 17, Design Size No Load Supply Air Flow Rate [m3/s], 0.66148
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 17, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.07713E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 17, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.07713E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 17, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.07713E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 17, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 17, Design Size Rated Air Flow Rate [m3/s], 0.66148
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 17, Design Size Gross Rated Total Cooling Capacity [W], 10949.79932
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 17, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 17, 10465.9, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 17, 10359.3, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 17, Design Size Rated Air Flow Rate [m3/s], 0.66148
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 17, Design Size Gross Rated Heating Capacity [W], 10949.79932
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 17, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 17, Design Size Resistive Defrost Heater Capacity [W], 10949.79932
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 17, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 17, 511.5, 511.5, 3.31, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 17, 618.1, 618.1, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 17, Design Size Maximum Flow Rate [m3/s], 0.66148
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 17, Design Size Nominal Capacity [W], 15961.42625
+ Component Sizing Information, ZONEHVAC:BASEBOARD:CONVECTIVE:ELECTRIC, ELEC BASEBOARD 16, Design Size Heating Design Capacity [W], 15817.34466
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 16, Design Size Cooling Supply Air Flow Rate [m3/s], 0.67746
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 16, Design Size Heating Supply Air Flow Rate [m3/s], 0.67746
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 16, User-Specified Heating Supply Air Flow Rate [m3/s], 2.22045E-016
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 16, Design Size No Load Supply Air Flow Rate [m3/s], 0.67746
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 16, Design Size Outdoor Air Flow Rate During Cooling Operation [m3/s], 1.12609E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 16, Design Size Outdoor Air Flow Rate During Heating Operation [m3/s], 1.12609E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 16, Design Size Outdoor Air Flow Rate When No Cooling or Heating is Needed [m3/s], 1.12609E-002
+ Component Sizing Information, ZoneHVAC:PackagedTerminalHeatPump, PTHP 16, Design Size Maximum Supply Air Temperature from Supplemental Heater [C], 40.00000
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 16, Design Size Rated Air Flow Rate [m3/s], 0.67746
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 16, Design Size Gross Rated Total Cooling Capacity [W], 11214.32631
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 16, Design Size Gross Rated Sensible Heat Ratio, 0.80066
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 16, 10718.7, 2.53, 8.64, 8.70, 8.60, 8.70
+ DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, PTHP 1 SPD DX CLG COIL 16, 10609.6, 2.44, 8.34, 8.38, 8.52,  
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 16, Design Size Rated Air Flow Rate [m3/s], 0.67746
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 16, Design Size Gross Rated Heating Capacity [W], 11214.32631
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 16, User-Specified Gross Rated Heating Capacity [W], 2.22045E-016
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 16, Design Size Resistive Defrost Heater Capacity [W], 11214.32631
+ Component Sizing Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 16, User-Specified Resistive Defrost Heater Capacity [W], 2000.00000
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 16, 523.9, 523.9, 3.30, 4
+ DX Heating Coil Standard Rating Information, Coil:Heating:DX:SingleSpeed, PTHP 1 SPD DX HTG COIL 16, 633.0, 633.0, 3.07, 4
+ Component Sizing Information, Fan:ConstantVolume, PTHP CV FAN 16, Design Size Maximum Flow Rate [m3/s], 0.67746
+ Component Sizing Information, Coil:Heating:Electric, PTHP ELEC HTG BACKUP COIL 16, Design Size Nominal Capacity [W], 16359.47612
+Water Heater Information,WaterHeater:Mixed,600 GAL WATER HEATER - 600 KBTU/HR,2.2712,175842.0,0.000,0.0000
+ Component Sizing Information, PlantLoop, SERVICE WATER LOOP, Maximum Loop Flow Rate [m3/s], 3.00100E-004
+ Component Sizing Information, PlantLoop, SERVICE WATER LOOP, Plant Loop Volume [m3], 3.60120E-002
+ Component Sizing Information, PlantLoop, SERVICE WATER LOOP, Design Supply Temperature [C], 60.00000
+ Component Sizing Information, PlantLoop, SERVICE WATER LOOP, Design Return Temperature [C], 55.00000
+ Component Sizing Information, PlantLoop, SERVICE WATER LOOP, Sizing option (Coincident/NonCoincident), 1.00000
+ Component Sizing Information, Pump:ConstantSpeed, PUMP CONSTANT SPEED 1, Design Flow Rate [m3/s], 3.00100E-004
+ Component Sizing Information, Pump:ConstantSpeed, PUMP CONSTANT SPEED 1, Design Power Consumption [W], 12.77819
+ Component Sizing Information, WaterHeater:Mixed, 600 GAL WATER HEATER - 600 KBTU/HR, Use Side Design Flow Rate [m3/s], 3.00100E-004
+! <Environment>,Environment Name,Environment Type, Start Date, End Date, Start DayOfWeek, Duration {#days}, Source:Start DayOfWeek,  Use Daylight Saving, Use Holidays, Apply Weekend Holiday Rule,  Use Rain Values, Use Snow Values, Sky Temperature Model
+! <Environment:Special Days>, Special Day Name, Special Day Type, Source, Start Date, Duration {#days}
+! <Environment:Daylight Saving>, Daylight Saving Indicator, Source, Start Date, End Date
+! <Environment:WarmupDays>, NumberofWarmupDays
+Environment,MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+! <Environment:Design Day Data>, Max Dry-Bulb Temp {C}, Temp Range {dC}, Temp Range Ind Type, Hum Ind Type, Hum Ind Value at Max Temp, Hum Ind Units, Pressure {Pa}, Wind Direction {deg CW from N}, Wind Speed {m/s}, Clearness, Rain, Snow
+! <Environment:Design Day Misc>,DayOfYear,ASHRAE A Coeff,ASHRAE B Coeff,ASHRAE C Coeff,Solar Constant-Annual Variation,Eq of Time {minutes}, Solar Declination Angle {deg}, Solar Model
+Environment:Design Day Data,30.00,9.30,DefaultMultipliers,Wetbulb,22.10,{C},100893,220,4.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  5
+! <Tabular Report>,Style,Unit Conversion
+Tabular Report,HTML,None
+! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
+ Warmup Convergence Information,THERMAL ZONE 1,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,3.7194901590E-002,0.1324873294,Pass,Pass,0.5661067564,5.9306914361,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 10,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,5.1191803826E-005,2.0603621718E-004,Pass,Pass,1.9652731776E-002,2.3479322423E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 11,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,9.6366658038E-005,2.4361768772E-004,Pass,Pass,3.6678284711E-002,2.6119381092E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 12,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,4.7817679974E-005,2.2899227886E-004,Pass,Pass,3.1590249938E-002,3.6974114558E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 13,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,4.0448216593E-005,1.9304842497E-004,Pass,Pass,1.9568394928E-002,2.7942151758E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 14,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,4.9297161309E-005,2.2946186696E-004,Pass,Pass,2.9703140850E-002,3.0878907274E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 15,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,3.9876095378E-005,1.9242066461E-004,Pass,Pass,1.9335671115E-002,2.7640610634E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 16,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,5.1291783727E-005,2.0610859120E-004,Pass,Pass,1.9649259759E-002,2.3694665647E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 17,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,5.1714434397E-005,2.0720119833E-004,Pass,Pass,1.9716609199E-002,2.3279943349E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 18,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,4.7419977299E-005,2.2856003747E-004,Pass,Pass,3.1105685063E-002,3.6286791868E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 19,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,4.9349385515E-005,2.2888589632E-004,Pass,Pass,2.9890943430E-002,3.1089887501E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 2,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,3.3384668371E-005,1.7452588588E-004,Pass,Pass,1.6794926482E-002,3.1676086089E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 20,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,4.9753057983E-005,2.2994431219E-004,Pass,Pass,2.9934186605E-002,3.0644420683E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 21,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,8.9546975921E-005,2.8674414155E-004,Pass,Pass,5.6318374705E-002,5.2776315293E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 22,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,4.9667426681E-005,2.3037613067E-004,Pass,Pass,2.9879166686E-002,3.0792832761E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 23,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,3.7230064302E-002,0.1365153163,Pass,Pass,0.9216939696,10.3288996742,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 3,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,5.0743273217E-005,2.0456910203E-004,Pass,Pass,1.9519765650E-002,2.3578275071E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 4,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,3.2604746669E-005,1.7167839222E-004,Pass,Pass,1.6645333531E-002,3.1599149453E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 5,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,3.7668802682E-005,1.8692012051E-004,Pass,Pass,1.6189671430E-002,2.5436220183E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 6,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,3.7272765977E-005,1.8618344910E-004,Pass,Pass,1.6172910724E-002,2.5935130581E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 7,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,5.2179361954E-005,1.2982042118E-004,Pass,Pass,2.4652000818E-002,1.6006660737E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 8,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,3.6832482039E-005,1.8130499499E-004,Pass,Pass,1.6185821950E-002,2.5714093069E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 9,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB,3.7020282696E-005,1.8222552317E-004,Pass,Pass,1.6110193522E-002,2.5945193618E-002,Pass,Pass
+Environment,MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,26.00,9.30,DefaultMultipliers,Dewpoint,21.60,{C},100893,220,4.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  5
+ Warmup Convergence Information,THERMAL ZONE 1,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,2.6101623301E-002,9.4554090890E-002,Pass,Pass,0.1384271228,0.6734514453,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 10,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,4.0904695896E-005,2.1947581209E-004,Pass,Pass,2.7852325674E-002,3.7207159334E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 11,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,7.3988459828E-005,2.3322301049E-004,Pass,Pass,0.1387865409,0.4658533211,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 12,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,6.5914071996E-007,2.8471027314E-006,Pass,Pass,7.1781601927E-002,0.1267257743,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 13,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,3.8200904025E-005,2.1648132953E-004,Pass,Pass,2.8259798460E-002,4.6521399832E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 14,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,5.1216057387E-005,2.7768304694E-004,Pass,Pass,5.7081753660E-002,7.2028513812E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 15,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,3.8037871678E-005,2.1670747792E-004,Pass,Pass,2.7831262432E-002,4.5167033354E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 16,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,4.0876133863E-005,2.1788161635E-004,Pass,Pass,2.7588777055E-002,3.7158180379E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 17,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,4.1191067910E-005,2.1896586132E-004,Pass,Pass,2.7830623672E-002,3.6684176493E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 18,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,6.5542853535E-007,2.8627517600E-006,Pass,Pass,6.8229153604E-002,0.1098510966,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 19,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,5.1423204645E-005,2.7772016766E-004,Pass,Pass,5.7189074435E-002,7.2600614078E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 2,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,3.1772361401E-007,1.7251164480E-006,Pass,Pass,2.4918750443E-002,5.3577678144E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 20,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,5.1784216293E-005,2.7873793262E-004,Pass,Pass,5.8266757740E-002,7.2439391693E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 21,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,1.5427628812E-002,4.0202117122E-002,Pass,Pass,0.1561473648,0.4974191892,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 22,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,5.1579555146E-005,2.7855193303E-004,Pass,Pass,5.8519133304E-002,7.3641699831E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 23,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,2.8380477645E-002,9.8452565459E-002,Pass,Pass,0.1585322913,0.9325716586,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 3,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,4.0520267647E-005,2.1809383523E-004,Pass,Pass,2.7485181594E-002,3.6978910128E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 4,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,3.0928666455E-007,1.6878650118E-006,Pass,Pass,2.4683349946E-002,5.2878079909E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 5,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,3.5655298300E-005,2.0788705180E-004,Pass,Pass,2.3055401698E-002,4.0180815473E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 6,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,3.5254665396E-005,2.0692969506E-004,Pass,Pass,2.2962574483E-002,4.0840095170E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 7,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,6.8331276274E-005,1.8524197830E-004,Pass,Pass,3.7680567318E-002,2.8234714400E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 8,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,3.5190727088E-005,2.0706498476E-004,Pass,Pass,2.3180098823E-002,4.0929044363E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 9,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB,3.4886761466E-005,2.0630169022E-004,Pass,Pass,2.2958747422E-002,4.0982944971E-002,Pass,Pass
+Environment,MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,28.10,9.30,DefaultMultipliers,Enthalpy,69300.00,{J/kgDryAir},100893,220,4.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  5
+ Warmup Convergence Information,THERMAL ZONE 1,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.4060051077E-002,0.1189071560,Pass,Pass,0.1910450950,1.6480742545,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 10,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,4.2000073949E-005,2.1402515919E-004,Pass,Pass,2.2641257257E-002,2.8231860788E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 11,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,9.2867882737E-005,2.5284434945E-004,Pass,Pass,4.8300328654E-002,4.0246361018E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 12,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,4.9968917229E-005,2.6840878283E-004,Pass,Pass,4.0967922823E-002,5.3909628897E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 13,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.8998162101E-005,2.0990513702E-004,Pass,Pass,2.2710683450E-002,3.4193371141E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 14,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,5.2365184192E-005,2.6974370389E-004,Pass,Pass,3.7417942721E-002,4.1421759588E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 15,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.8413920310E-005,2.0937507793E-004,Pass,Pass,2.2423529977E-002,3.3637526653E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 16,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,4.2560420788E-005,2.1528944459E-004,Pass,Pass,2.2564535314E-002,2.8390180515E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 17,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,4.2974249359E-005,2.1701480644E-004,Pass,Pass,2.2683222072E-002,2.7933606556E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 18,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,4.9915800640E-005,2.6897556060E-004,Pass,Pass,4.0139204237E-002,5.1686015506E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 19,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,5.2993927836E-005,2.7016376357E-004,Pass,Pass,3.7618922168E-002,4.1725882962E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 2,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.3693711569E-005,2.0025241119E-004,Pass,Pass,1.9662454391E-002,3.8988759899E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 20,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,5.2919892626E-005,2.7025949053E-004,Pass,Pass,3.7783090899E-002,4.1204905812E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 21,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,9.1527362850E-005,2.7784867826E-004,Pass,Pass,0.1598031297,0.5690909392,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 22,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,5.2693213613E-005,2.7064366905E-004,Pass,Pass,3.7774701565E-002,4.1528066197E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 23,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.4249147573E-002,0.1224816273,Pass,Pass,0.3081288594,2.3110949765,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 3,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,4.2218925388E-005,2.1469677446E-004,Pass,Pass,2.2438041632E-002,2.8249154424E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 4,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.3336019136E-005,1.9877840543E-004,Pass,Pass,1.9491418963E-002,3.8790949811E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 5,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.6221939605E-005,2.0147437473E-004,Pass,Pass,1.8672412210E-002,3.0570865965E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 6,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.5985637456E-005,2.0089354221E-004,Pass,Pass,1.8637774454E-002,3.1148661528E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 7,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,8.8438590519E-005,2.2602494923E-004,Pass,Pass,2.8886149913E-002,1.9316603352E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 8,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.6249042125E-005,2.0238042792E-004,Pass,Pass,1.8705014101E-002,3.0987004225E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 9,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB,3.5951397157E-005,2.0153243397E-004,Pass,Pass,1.8585621194E-002,3.1184548875E-002,Pass,Pass
+Environment,MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,28.10,9.30,DefaultMultipliers,Wetbulb,23.20,{C},100893,220,4.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  5
+ Warmup Convergence Information,THERMAL ZONE 1,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.4058529978E-002,0.1188960767,Pass,Pass,0.1908476777,1.6462583840,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 10,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,4.2381687034E-005,2.1477300672E-004,Pass,Pass,2.2642602241E-002,2.8233785178E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 11,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,9.2494386169E-005,2.5194785979E-004,Pass,Pass,4.8306206352E-002,4.0254925103E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 12,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,5.0229365936E-005,2.6794166709E-004,Pass,Pass,4.0970837498E-002,5.3916387247E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 13,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.8747521492E-005,2.0847027428E-004,Pass,Pass,2.2712269030E-002,3.4196305663E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 14,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,5.1984082080E-005,2.6774536411E-004,Pass,Pass,3.7420350794E-002,4.1426515010E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 15,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.8408252378E-005,2.0870275832E-004,Pass,Pass,2.2425094582E-002,3.3640400548E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 16,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,4.2293158617E-005,2.1387599354E-004,Pass,Pass,2.2565981579E-002,2.8392430742E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 17,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,4.2704628962E-005,2.1558944846E-004,Pass,Pass,2.2684683335E-002,2.7935809897E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 18,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,4.9774299110E-005,2.6753203552E-004,Pass,Pass,4.0141987786E-002,5.1692570623E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 19,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,5.2609400836E-005,2.6816737646E-004,Pass,Pass,3.7621378323E-002,4.1730749812E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 2,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.3456932880E-005,1.9880958836E-004,Pass,Pass,1.9664171444E-002,3.8992727554E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 20,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,5.2932658684E-005,2.6916877647E-004,Pass,Pass,3.7785226093E-002,4.1207701678E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 21,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,9.2563629612E-005,2.7832371144E-004,Pass,Pass,0.1599160323,0.5691477270,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 22,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,5.2662136871E-005,2.6926932171E-004,Pass,Pass,3.7777180039E-002,4.1532789857E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 23,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.4247736093E-002,0.1224692540,Pass,Pass,0.3087370835,2.3109452130,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 3,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,4.1949769376E-005,2.1326633533E-004,Pass,Pass,2.2439446844E-002,2.8251329669E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 4,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.3399992248E-005,1.9820286961E-004,Pass,Pass,1.9493052255E-002,3.8794529605E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 5,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.5973645935E-005,2.0002179706E-004,Pass,Pass,1.8673911224E-002,3.0573828699E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 6,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.5739703210E-005,1.9944970840E-004,Pass,Pass,1.8639249820E-002,3.1151642373E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 7,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,8.8249926424E-005,2.2566750963E-004,Pass,Pass,2.8887912121E-002,1.9318575857E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 8,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.6000103455E-005,2.0091837784E-004,Pass,Pass,1.8706472471E-002,3.0989894890E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 9,SizingPeriod: MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB,3.5705216411E-005,2.0008101806E-004,Pass,Pass,1.8587064078E-002,3.1187454983E-002,Pass,Pass
+Environment,MONTREAL INT'L ANN HTG 99.6% CONDNS DB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-23.70,0.00,DefaultMultipliers,Wetbulb,-23.70,{C},100893,260,3.9,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  4
+ Warmup Convergence Information,THERMAL ZONE 1,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,7.5367073212E-002,0.4031843344,Pass,Pass,1.4203665257E-002,8.6987576691E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 10,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.6921316807E-002,0.2440274263,Pass,Pass,5.9856610124E-003,2.3342405060E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 11,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.9541374940E-002,0.2508916113,Pass,Pass,4.2373525381E-003,1.7481372513E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 12,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.5702650649E-002,0.2461919556,Pass,Pass,5.0211685565E-003,1.9977768743E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 13,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.7790437926E-002,0.2448268481,Pass,Pass,6.3455934365E-003,2.4430095970E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 14,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.5421355354E-002,0.2461732165,Pass,Pass,4.9856608662E-003,1.9951651801E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 15,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.7795474680E-002,0.2448217166,Pass,Pass,6.3473801899E-003,2.4435191309E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 16,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.7081173726E-002,0.2438121365,Pass,Pass,6.0480382404E-003,2.3532488194E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 17,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.6921266662E-002,0.2440280038,Pass,Pass,5.9835616078E-003,2.3333827644E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 18,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.5706010422E-002,0.2461870245,Pass,Pass,5.0221413065E-003,1.9979930638E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 19,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.5415342165E-002,0.2461812467,Pass,Pass,4.9821609981E-003,1.9940395535E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 2,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.8283387213E-002,0.2440196182,Pass,Pass,6.5009237424E-003,2.5687686192E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 20,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.5312566472E-002,0.2463271825,Pass,Pass,4.9449588299E-003,1.9841317105E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 21,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.9914381511E-002,0.2499927326,Pass,Pass,3.9737746008E-003,1.6184906287E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 22,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.5311374652E-002,0.2463291635,Pass,Pass,4.9455311774E-003,1.9844260607E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 23,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,7.5309306050E-002,0.4007612774,Pass,Pass,1.4638349524E-002,9.0078318524E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 3,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.7092318556E-002,0.2437968280,Pass,Pass,6.0550641584E-003,2.3556593107E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 4,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.8288315044E-002,0.2439925898,Pass,Pass,6.5012089707E-003,2.5687853524E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 5,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.7413853445E-002,0.2436094622,Pass,Pass,6.1141701246E-003,2.4459971056E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 6,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.7572643835E-002,0.2434195228,Pass,Pass,6.1816123589E-003,2.4676154302E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 7,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.9345219908E-002,0.2511726999,Pass,Pass,4.2712710454E-003,1.8028597722E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 8,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.7412643508E-002,0.2436105173,Pass,Pass,6.1154428704E-003,2.4465615652E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 9,SizingPeriod: MONTREAL INT'L ANN HTG 99.6% CONDNS DB,4.7583916637E-002,0.2434057518,Pass,Pass,6.1892540172E-003,2.4703110989E-002,Pass,Pass
+Environment,MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-5.30,0.00,DefaultMultipliers,Wetbulb,-5.30,{C},100893,260,12.9,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  5
+ Warmup Convergence Information,THERMAL ZONE 1,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,7.5299529309E-002,0.3807875916,Pass,Pass,3.1562837262E-002,0.2175622134,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 10,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.2549467063E-002,0.2480304084,Pass,Pass,7.3097429214E-003,3.1496186094E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 11,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.9824269092E-002,0.2508839373,Pass,Pass,5.5305651825E-003,2.3500376906E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 12,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.1766358212E-002,0.2519294864,Pass,Pass,5.5417865280E-003,2.4603985123E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 13,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.3353232155E-002,0.2486503060,Pass,Pass,7.7114446252E-003,3.2933192183E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 14,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.1401687954E-002,0.2492520399,Pass,Pass,5.5137423634E-003,2.4503151853E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 15,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.3350653599E-002,0.2486289021,Pass,Pass,7.7100562473E-003,3.2924406723E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 16,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.3138959335E-002,0.2505589906,Pass,Pass,7.3780329558E-003,3.1737463454E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 17,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.2549071016E-002,0.2480280891,Pass,Pass,7.3095980278E-003,3.1495127934E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 18,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.1769515932E-002,0.2519294719,Pass,Pass,5.5414745600E-003,2.4601620771E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 19,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.1396704672E-002,0.2492533851,Pass,Pass,5.5114721156E-003,2.4493547420E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 2,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.3791686713E-002,0.2476359385,Pass,Pass,8.2974823446E-003,3.6307263648E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 20,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.1412221717E-002,0.2492713903,Pass,Pass,5.4892293731E-003,2.4409249990E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 21,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.9635561211E-002,0.2497009159,Pass,Pass,4.8575072449E-003,2.0733560935E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 22,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.1412569186E-002,0.2492736201,Pass,Pass,5.4889629028E-003,2.4408362670E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 23,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,7.5295990316E-002,0.3763612870,Pass,Pass,3.4488984055E-002,0.2424529350,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 3,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.3148202753E-002,0.2505583944,Pass,Pass,7.3851595496E-003,3.1765756692E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 4,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.3787475414E-002,0.2476133786,Pass,Pass,8.2921598364E-003,3.6281622570E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 5,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.2885906272E-002,0.2471840672,Pass,Pass,7.8531660807E-003,3.4623785799E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 6,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.3587164392E-002,0.2495257786,Pass,Pass,7.9268494312E-003,3.4898478159E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 7,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.9976456493E-002,0.2513350501,Pass,Pass,5.8957183105E-003,2.5363993824E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 8,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.2885428891E-002,0.2471896437,Pass,Pass,7.8519684164E-003,3.4618699730E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 9,SizingPeriod: MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB,4.3596651467E-002,0.2495153668,Pass,Pass,7.9361482644E-003,3.4937170097E-002,Pass,Pass
+Environment,MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-23.00,0.00,DefaultMultipliers,Dewpoint,-30.50,{C},100893,260,3.9,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  4
+ Warmup Convergence Information,THERMAL ZONE 1,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,7.5370178809E-002,0.4021877627,Pass,Pass,1.4473518127E-002,8.8942358027E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 10,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.6744639360E-002,0.2444071214,Pass,Pass,6.0500049190E-003,2.3647252672E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 11,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.9579053375E-002,0.2509145283,Pass,Pass,4.2914090498E-003,1.7702184228E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 12,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.5553553928E-002,0.2461949626,Pass,Pass,5.0753642805E-003,2.0240823903E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 13,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.7606113258E-002,0.2432630892,Pass,Pass,6.4133488632E-003,2.4759833423E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 14,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.5275376988E-002,0.2473617118,Pass,Pass,5.0405012622E-003,2.0217841169E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 15,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.7611050424E-002,0.2432561991,Pass,Pass,6.4149495045E-003,2.4764206390E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 16,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.6903033178E-002,0.2441770774,Pass,Pass,6.1123810912E-003,2.3837446982E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 17,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.6744454696E-002,0.2444053803,Pass,Pass,6.0474314179E-003,2.3636787673E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 18,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.5556858896E-002,0.2461859443,Pass,Pass,5.0762344375E-003,2.0242575036E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 19,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.5269337146E-002,0.2473689024,Pass,Pass,5.0367036447E-003,2.0205400691E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 2,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.8096943758E-002,0.2447863458,Pass,Pass,6.5684944234E-003,2.6013173403E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 20,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.5167365960E-002,0.2470709149,Pass,Pass,4.9992165579E-003,2.0105275419E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 21,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.9957142383E-002,0.2500215363,Pass,Pass,4.0252207906E-003,1.6390490890E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 22,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.5166232928E-002,0.2470748165,Pass,Pass,4.9999747386E-003,2.0108963127E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 23,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,7.5312050018E-002,0.3998698700,Pass,Pass,1.4912072271E-002,9.2074784528E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 3,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.6914249871E-002,0.2441636748,Pass,Pass,6.1200228265E-003,2.3864001631E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 4,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.8101777303E-002,0.2447776251,Pass,Pass,6.5685667808E-003,2.6012372211E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 5,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.7234674168E-002,0.2439418641,Pass,Pass,6.1780486297E-003,2.4772792930E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 6,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.7392090466E-002,0.2437396336,Pass,Pass,6.2459224502E-003,2.4990926824E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 7,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.9380740193E-002,0.2511933097,Pass,Pass,4.3246642722E-003,1.8251844082E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 8,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.7233583788E-002,0.2439447282,Pass,Pass,6.1797095578E-003,2.4780004298E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 9,SizingPeriod: MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB,4.7403447429E-002,0.2437277498,Pass,Pass,6.2542367689E-003,2.5020609890E-002,Pass,Pass
+Environment,RUN PERIOD 1,WeatherFileRunPeriod,01/01/2006,12/31/2006,Sunday,365,Use RunPeriod Specified Day,No,No,No,Yes,Yes,Clark and Allen
+Environment:Daylight Saving,No,RunPeriod Object
+Environment:WarmupDays,  5
+ Warmup Convergence Information,THERMAL ZONE 1,RunPeriod: RUN PERIOD 1,4.0626069190E-003,1.9188281713E-002,Pass,Pass,2.4493202308E-002,2.4723812307E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 10,RunPeriod: RUN PERIOD 1,4.3780735458E-002,0.2922342300,Pass,Pass,4.5373966108E-002,0.1701178946,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 11,RunPeriod: RUN PERIOD 1,4.3231664705E-002,0.3322788818,Pass,Pass,2.3624423840E-002,5.4016657824E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 12,RunPeriod: RUN PERIOD 1,4.3620951099E-002,0.3084580942,Pass,Pass,3.8814510172E-002,7.4281245308E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 13,RunPeriod: RUN PERIOD 1,4.3860337315E-002,0.2855831424,Pass,Pass,7.5868041402E-002,0.3115985923,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 14,RunPeriod: RUN PERIOD 1,4.3529463527E-002,0.3102642901,Pass,Pass,3.6046465035E-002,7.2425599176E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 15,RunPeriod: RUN PERIOD 1,4.3897417500E-002,0.2877611850,Pass,Pass,6.6454430565E-002,0.2745343089,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 16,RunPeriod: RUN PERIOD 1,4.3811050496E-002,0.2911023466,Pass,Pass,5.0228944277E-002,0.2003437372,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 17,RunPeriod: RUN PERIOD 1,4.3822301931E-002,0.2914688945,Pass,Pass,5.0711302193E-002,0.1984616309,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 18,RunPeriod: RUN PERIOD 1,4.3601827532E-002,0.3089604240,Pass,Pass,3.6704143053E-002,7.3615925756E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 19,RunPeriod: RUN PERIOD 1,4.3531525982E-002,0.3102477765,Pass,Pass,3.6139508276E-002,7.2443024141E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 2,RunPeriod: RUN PERIOD 1,4.3840773381E-002,0.2841465964,Pass,Pass,9.0247915942E-002,0.4328293579,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 20,RunPeriod: RUN PERIOD 1,4.3543430491E-002,0.3102876788,Pass,Pass,3.6641707103E-002,7.2414352612E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 21,RunPeriod: RUN PERIOD 1,4.4966624461E-002,0.3361551589,Pass,Pass,2.6408001345E-002,4.7132350796E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 22,RunPeriod: RUN PERIOD 1,4.3522672469E-002,0.3107496207,Pass,Pass,3.5872909050E-002,7.1740377164E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 23,RunPeriod: RUN PERIOD 1,4.0192891385E-003,1.8887439052E-002,Pass,Pass,2.5090605046E-002,2.5805918765E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 3,RunPeriod: RUN PERIOD 1,4.3807694440E-002,0.2911090949,Pass,Pass,4.9930834216E-002,0.1993801141,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 4,RunPeriod: RUN PERIOD 1,4.3832236778E-002,0.2847224417,Pass,Pass,7.9035389734E-002,0.3763323506,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 5,RunPeriod: RUN PERIOD 1,4.3787814415E-002,0.2883303896,Pass,Pass,6.3367695668E-002,0.2824395766,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 6,RunPeriod: RUN PERIOD 1,4.3825452426E-002,0.2881895094,Pass,Pass,6.2861620843E-002,0.2832350405,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 7,RunPeriod: RUN PERIOD 1,4.2636368162E-002,0.3302481922,Pass,Pass,2.1620613515E-002,5.7933149228E-002,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 8,RunPeriod: RUN PERIOD 1,4.3803366552E-002,0.2889127375,Pass,Pass,6.1536389886E-002,0.2755679492,Pass,Pass
+ Warmup Convergence Information,THERMAL ZONE 9,RunPeriod: RUN PERIOD 1,4.3827711004E-002,0.2880027044,Pass,Pass,6.3326305883E-002,0.2858251113,Pass,Pass
+! <Program Control Information:Threads/Parallel Sims>, Threading Supported,Maximum Number of Threads, Env Set Threads (OMP_NUM_THREADS), EP Env Set Threads (EP_OMP_NUM_THREADS), IDF Set Threads, Number of Threads Used (Interior Radiant Exchange), Number Nominal Surfaces, Number Parallel Sims
+Program Control:Threads/Parallel Sims, No,1, N/A, N/A, N/A, N/A, N/A, N/A
+End of Data

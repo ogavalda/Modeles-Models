@@ -1,0 +1,343 @@
+{
+  "schema": "https://github.com/rd2/tbd/blob/master/tbd.schema.json",
+  "description": "4_MURB_HR_1950_1980_5999Monkland.osm",
+  "log": {
+    "date": "2024-07-17 06:54:44 -0400",
+    "status": "Partial success, encountered non-fatal errors",
+    "results": [
+      "RSi derated by -37.8% : Surface 103",
+      "RSi derated by -37.3% : Surface 104",
+      "RSi derated by -45.6% : Surface 111",
+      "RSi derated by -37.1% : Surface 112",
+      "RSi derated by -37.7% : Surface 117",
+      "RSi derated by -37.2% : Surface 118",
+      "RSi derated by -37.3% : Surface 123",
+      "RSi derated by -37.7% : Surface 124",
+      "RSi derated by -37.0% : Surface 128",
+      "RSi derated by -45.3% : Surface 129",
+      "RSi derated by -34.5% : Surface 137",
+      "RSi derated by -39.2% : Surface 143",
+      "RSi derated by -39.2% : Surface 149",
+      "RSi derated by -44.9% : Surface 157",
+      "RSi derated by -37.1% : Surface 158",
+      "RSi derated by -21.1% : Surface 162",
+      "RSi derated by -21.1% : Surface 163",
+      "RSi derated by -48.2% : Surface 164",
+      "RSi derated by -21.1% : Surface 165",
+      "RSi derated by -21.1% : Surface 166",
+      "RSi derated by -21.1% : Surface 167",
+      "RSi derated by -21.1% : Surface 168",
+      "RSi derated by -21.1% : Surface 169",
+      "RSi derated by -48.2% : Surface 170",
+      "RSi derated by -21.1% : Surface 171",
+      "RSi derated by -21.1% : Surface 172",
+      "RSi derated by -21.1% : Surface 173",
+      "RSi derated by -21.1% : Surface 176",
+      "RSi derated by -21.1% : Surface 177",
+      "RSi derated by -49.5% : Surface 178",
+      "RSi derated by -48.2% : Surface 179",
+      "RSi derated by -49.0% : Surface 180",
+      "RSi derated by -21.1% : Surface 181",
+      "RSi derated by -21.1% : Surface 184",
+      "RSi derated by -21.1% : Surface 185",
+      "RSi derated by -45.8% : Surface 186",
+      "RSi derated by -21.1% : Surface 187",
+      "RSi derated by -21.1% : Surface 190",
+      "RSi derated by -47.4% : Surface 191",
+      "RSi derated by -47.2% : Surface 192",
+      "RSi derated by -21.1% : Surface 193",
+      "RSi derated by -21.1% : Surface 196",
+      "RSi derated by -47.3% : Surface 197",
+      "RSi derated by -47.6% : Surface 198",
+      "RSi derated by -21.1% : Surface 199",
+      "RSi derated by -21.1% : Surface 202",
+      "RSi derated by -21.1% : Surface 203",
+      "RSi derated by -51.4% : Surface 204",
+      "RSi derated by -47.1% : Surface 205",
+      "RSi derated by -21.1% : Surface 206",
+      "RSi derated by -47.5% : Surface 209",
+      "RSi derated by -47.2% : Surface 210",
+      "RSi derated by -21.1% : Surface 211",
+      "RSi derated by -21.1% : Surface 212",
+      "RSi derated by -21.1% : Surface 215",
+      "RSi derated by -47.2% : Surface 216",
+      "RSi derated by -47.4% : Surface 217",
+      "RSi derated by -21.1% : Surface 218",
+      "RSi derated by -46.1% : Surface 22",
+      "RSi derated by -47.1% : Surface 221",
+      "RSi derated by -51.6% : Surface 222",
+      "RSi derated by -21.1% : Surface 223",
+      "RSi derated by -21.1% : Surface 224",
+      "RSi derated by -21.1% : Surface 225",
+      "RSi derated by -21.1% : Surface 228",
+      "RSi derated by -21.1% : Surface 229",
+      "RSi derated by -50.6% : Surface 23",
+      "RSi derated by -51.8% : Surface 230",
+      "RSi derated by -47.1% : Surface 231",
+      "RSi derated by -21.1% : Surface 232",
+      "RSi derated by -47.2% : Surface 243",
+      "RSi derated by -51.4% : Surface 244",
+      "RSi derated by -21.1% : Surface 245",
+      "RSi derated by -21.1% : Surface 246",
+      "RSi derated by -21.1% : Surface 247",
+      "RSi derated by -49.3% : Surface 250",
+      "RSi derated by -52.8% : Surface 251",
+      "RSi derated by -21.1% : Surface 252",
+      "RSi derated by -21.1% : Surface 253",
+      "RSi derated by -21.1% : Surface 254",
+      "RSi derated by -14.4% : Surface 255",
+      "RSi derated by -49.1% : Surface 257",
+      "RSi derated by -53.0% : Surface 258",
+      "RSi derated by -21.1% : Surface 259",
+      "RSi derated by -21.1% : Surface 260",
+      "RSi derated by -21.1% : Surface 261",
+      "RSi derated by -14.2% : Surface 262",
+      "RSi derated by -49.5% : Surface 264",
+      "RSi derated by -49.3% : Surface 265",
+      "RSi derated by -21.1% : Surface 266",
+      "RSi derated by -21.1% : Surface 267",
+      "RSi derated by -26.3% : Surface 268",
+      "RSi derated by -21.1% : Surface 270",
+      "RSi derated by -21.1% : Surface 271",
+      "RSi derated by -53.2% : Surface 272",
+      "RSi derated by -49.2% : Surface 273",
+      "RSi derated by -21.1% : Surface 274",
+      "RSi derated by -14.4% : Surface 275",
+      "RSi derated by -21.1% : Surface 277",
+      "RSi derated by -21.1% : Surface 278",
+      "RSi derated by -48.1% : Surface 279",
+      "RSi derated by -21.1% : Surface 280",
+      "RSi derated by -11.8% : Surface 281",
+      "RSi derated by -21.1% : Surface 283",
+      "RSi derated by -49.3% : Surface 284",
+      "RSi derated by -49.5% : Surface 285",
+      "RSi derated by -21.1% : Surface 286",
+      "RSi derated by -26.5% : Surface 287",
+      "RSi derated by -21.1% : Surface 289",
+      "RSi derated by -49.4% : Surface 290",
+      "RSi derated by -49.2% : Surface 291",
+      "RSi derated by -21.1% : Surface 292",
+      "RSi derated by -25.5% : Surface 293",
+      "RSi derated by -21.1% : Surface 295",
+      "RSi derated by -49.3% : Surface 296",
+      "RSi derated by -49.4% : Surface 297",
+      "RSi derated by -21.1% : Surface 298",
+      "RSi derated by -25.8% : Surface 299",
+      "RSi derated by -46.3% : Surface 3",
+      "RSi derated by -46.2% : Surface 30",
+      "RSi derated by -21.1% : Surface 301",
+      "RSi derated by -21.1% : Surface 302",
+      "RSi derated by -51.2% : Surface 303",
+      "RSi derated by -50.1% : Surface 304",
+      "RSi derated by -50.8% : Surface 305",
+      "RSi derated by -21.1% : Surface 306",
+      "RSi derated by -15.1% : Surface 307",
+      "RSi derated by -21.1% : Surface 309",
+      "RSi derated by -46.5% : Surface 31",
+      "RSi derated by -21.1% : Surface 310",
+      "RSi derated by -52.8% : Surface 311",
+      "RSi derated by -49.2% : Surface 312",
+      "RSi derated by -21.1% : Surface 313",
+      "RSi derated by -14.2% : Surface 314",
+      "RSi derated by -21.1% : Surface 316",
+      "RSi derated by -21.1% : Surface 317",
+      "RSi derated by -50.1% : Surface 318",
+      "RSi derated by -21.1% : Surface 319",
+      "RSi derated by -21.1% : Surface 320",
+      "RSi derated by -21.1% : Surface 321",
+      "RSi derated by -21.1% : Surface 322",
+      "RSi derated by -21.1% : Surface 323",
+      "RSi derated by -50.1% : Surface 324",
+      "RSi derated by -21.1% : Surface 325",
+      "RSi derated by -21.1% : Surface 326",
+      "RSi derated by -21.1% : Surface 327",
+      "RSi derated by -6.4% : Surface 328",
+      "RSi derated by -39.2% : Surface 339",
+      "RSi derated by -39.2% : Surface 340",
+      "RSi derated by -48.6% : Surface 37",
+      "RSi derated by -47.2% : Surface 38",
+      "RSi derated by -48.0% : Surface 39",
+      "RSi derated by -46.0% : Surface 4",
+      "RSi derated by -51.1% : Surface 45",
+      "RSi derated by -46.0% : Surface 46",
+      "RSi derated by -44.6% : Surface 52",
+      "RSi derated by -50.6% : Surface 58",
+      "RSi derated by -46.0% : Surface 59",
+      "RSi derated by -45.9% : Surface 63",
+      "RSi derated by -50.9% : Surface 64",
+      "RSi derated by -46.1% : Surface 71",
+      "RSi derated by -46.3% : Surface 72",
+      "RSi derated by -46.4% : Surface 76",
+      "RSi derated by -46.1% : Surface 77",
+      "RSi derated by -41.5% : Surface 84",
+      "RSi derated by -39.2% : Surface 85",
+      "RSi derated by -40.6% : Surface 86",
+      "RSi derated by -37.4% : Surface 91",
+      "RSi derated by -37.9% : Surface 92",
+      "RSi derated by -37.3% : Surface 96",
+      "RSi derated by -44.9% : Surface 97"
+    ],
+    "messages": [
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 234 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 234 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 234 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 234 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 12 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 12 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 12 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 12 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 22 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 22 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 22 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 22 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 231 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 231 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 231 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 231 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 24 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 24 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 24 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 24 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 51 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 51 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 51 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 51 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 49 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 49 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 49 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 49 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 57 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 57 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 57 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 57 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 21 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 21 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 21 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 21 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 45 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 45 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 45 (mth)"
+      },
+      {
+        "level": "ERROR",
+        "message": "Orphaned subsurface Sub Surface 45 (mth)"
+      }
+    ]
+  }
+}

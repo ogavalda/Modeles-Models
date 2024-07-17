@@ -1,0 +1,413 @@
+EnergyPlus Starting
+EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.07.17 06:55
+Initializing Response Factors
+Calculating CTFs for "GENERIC EXTERIOR WALL PRE1980 6A"
+Calculating CTFs for "GENERIC GROUND SLAB 6A 19802010"
+Calculating CTFs for "GENERIC INTERIOR CEILING 1"
+Calculating CTFs for "GENERIC INTERIOR CEILING 10"
+Calculating CTFs for "GENERIC INTERIOR CEILING 11"
+Calculating CTFs for "GENERIC INTERIOR CEILING 12"
+Calculating CTFs for "GENERIC INTERIOR CEILING 13"
+Calculating CTFs for "GENERIC INTERIOR CEILING 14"
+Calculating CTFs for "GENERIC INTERIOR CEILING 15"
+Calculating CTFs for "GENERIC INTERIOR CEILING 16"
+Calculating CTFs for "GENERIC INTERIOR CEILING 17"
+Calculating CTFs for "GENERIC INTERIOR CEILING 18"
+Calculating CTFs for "GENERIC INTERIOR CEILING 19"
+Calculating CTFs for "GENERIC INTERIOR CEILING 2"
+Calculating CTFs for "GENERIC INTERIOR CEILING 20"
+Calculating CTFs for "GENERIC INTERIOR CEILING 21"
+Calculating CTFs for "GENERIC INTERIOR CEILING 22"
+Calculating CTFs for "GENERIC INTERIOR CEILING 3"
+Calculating CTFs for "GENERIC INTERIOR CEILING 4"
+Calculating CTFs for "GENERIC INTERIOR CEILING 5"
+Calculating CTFs for "GENERIC INTERIOR CEILING 6"
+Calculating CTFs for "GENERIC INTERIOR CEILING 7"
+Calculating CTFs for "GENERIC INTERIOR CEILING 8"
+Calculating CTFs for "GENERIC INTERIOR CEILING 9"
+Calculating CTFs for "SURFACE 103 C TBD"
+Calculating CTFs for "SURFACE 104 C TBD"
+Calculating CTFs for "SURFACE 111 C TBD"
+Calculating CTFs for "SURFACE 112 C TBD"
+Calculating CTFs for "SURFACE 117 C TBD"
+Calculating CTFs for "SURFACE 118 C TBD"
+Calculating CTFs for "SURFACE 123 C TBD"
+Calculating CTFs for "SURFACE 124 C TBD"
+Calculating CTFs for "SURFACE 128 C TBD"
+Calculating CTFs for "SURFACE 129 C TBD"
+Calculating CTFs for "SURFACE 137 C TBD"
+Calculating CTFs for "SURFACE 143 C TBD"
+Calculating CTFs for "SURFACE 149 C TBD"
+Calculating CTFs for "SURFACE 157 C TBD"
+Calculating CTFs for "SURFACE 158 C TBD"
+Calculating CTFs for "SURFACE 162 C TBD"
+Calculating CTFs for "SURFACE 163 C TBD"
+Calculating CTFs for "SURFACE 164 C TBD"
+Calculating CTFs for "SURFACE 165 C TBD"
+Calculating CTFs for "SURFACE 166 C TBD"
+Calculating CTFs for "SURFACE 167 C TBD"
+Calculating CTFs for "SURFACE 168 C TBD"
+Calculating CTFs for "SURFACE 169 C TBD"
+Calculating CTFs for "SURFACE 170 C TBD"
+Calculating CTFs for "SURFACE 171 C TBD"
+Calculating CTFs for "SURFACE 172 C TBD"
+Calculating CTFs for "SURFACE 173 C TBD"
+Calculating CTFs for "SURFACE 176 C TBD"
+Calculating CTFs for "SURFACE 177 C TBD"
+Calculating CTFs for "SURFACE 178 C TBD"
+Calculating CTFs for "SURFACE 179 C TBD"
+Calculating CTFs for "SURFACE 180 C TBD"
+Calculating CTFs for "SURFACE 181 C TBD"
+Calculating CTFs for "SURFACE 184 C TBD"
+Calculating CTFs for "SURFACE 185 C TBD"
+Calculating CTFs for "SURFACE 186 C TBD"
+Calculating CTFs for "SURFACE 187 C TBD"
+Calculating CTFs for "SURFACE 190 C TBD"
+Calculating CTFs for "SURFACE 191 C TBD"
+Calculating CTFs for "SURFACE 192 C TBD"
+Calculating CTFs for "SURFACE 193 C TBD"
+Calculating CTFs for "SURFACE 196 C TBD"
+Calculating CTFs for "SURFACE 197 C TBD"
+Calculating CTFs for "SURFACE 198 C TBD"
+Calculating CTFs for "SURFACE 199 C TBD"
+Calculating CTFs for "SURFACE 202 C TBD"
+Calculating CTFs for "SURFACE 203 C TBD"
+Calculating CTFs for "SURFACE 204 C TBD"
+Calculating CTFs for "SURFACE 205 C TBD"
+Calculating CTFs for "SURFACE 206 C TBD"
+Calculating CTFs for "SURFACE 209 C TBD"
+Calculating CTFs for "SURFACE 210 C TBD"
+Calculating CTFs for "SURFACE 211 C TBD"
+Calculating CTFs for "SURFACE 212 C TBD"
+Calculating CTFs for "SURFACE 215 C TBD"
+Calculating CTFs for "SURFACE 216 C TBD"
+Calculating CTFs for "SURFACE 217 C TBD"
+Calculating CTFs for "SURFACE 218 C TBD"
+Calculating CTFs for "SURFACE 22 C TBD"
+Calculating CTFs for "SURFACE 221 C TBD"
+Calculating CTFs for "SURFACE 222 C TBD"
+Calculating CTFs for "SURFACE 223 C TBD"
+Calculating CTFs for "SURFACE 224 C TBD"
+Calculating CTFs for "SURFACE 225 C TBD"
+Calculating CTFs for "SURFACE 228 C TBD"
+Calculating CTFs for "SURFACE 229 C TBD"
+Calculating CTFs for "SURFACE 23 C TBD"
+Calculating CTFs for "SURFACE 230 C TBD"
+Calculating CTFs for "SURFACE 231 C TBD"
+Calculating CTFs for "SURFACE 232 C TBD"
+Calculating CTFs for "SURFACE 243 C TBD"
+Calculating CTFs for "SURFACE 244 C TBD"
+Calculating CTFs for "SURFACE 245 C TBD"
+Calculating CTFs for "SURFACE 246 C TBD"
+Calculating CTFs for "SURFACE 247 C TBD"
+Calculating CTFs for "SURFACE 250 C TBD"
+Calculating CTFs for "SURFACE 251 C TBD"
+Calculating CTFs for "SURFACE 252 C TBD"
+Calculating CTFs for "SURFACE 253 C TBD"
+Calculating CTFs for "SURFACE 254 C TBD"
+Calculating CTFs for "SURFACE 255 C TBD"
+Calculating CTFs for "SURFACE 257 C TBD"
+Calculating CTFs for "SURFACE 258 C TBD"
+Calculating CTFs for "SURFACE 259 C TBD"
+Calculating CTFs for "SURFACE 260 C TBD"
+Calculating CTFs for "SURFACE 261 C TBD"
+Calculating CTFs for "SURFACE 262 C TBD"
+Calculating CTFs for "SURFACE 264 C TBD"
+Calculating CTFs for "SURFACE 265 C TBD"
+Calculating CTFs for "SURFACE 266 C TBD"
+Calculating CTFs for "SURFACE 267 C TBD"
+Calculating CTFs for "SURFACE 268 C TBD"
+Calculating CTFs for "SURFACE 270 C TBD"
+Calculating CTFs for "SURFACE 271 C TBD"
+Calculating CTFs for "SURFACE 272 C TBD"
+Calculating CTFs for "SURFACE 273 C TBD"
+Calculating CTFs for "SURFACE 274 C TBD"
+Calculating CTFs for "SURFACE 275 C TBD"
+Calculating CTFs for "SURFACE 277 C TBD"
+Calculating CTFs for "SURFACE 278 C TBD"
+Calculating CTFs for "SURFACE 279 C TBD"
+Calculating CTFs for "SURFACE 280 C TBD"
+Calculating CTFs for "SURFACE 281 C TBD"
+Calculating CTFs for "SURFACE 283 C TBD"
+Calculating CTFs for "SURFACE 284 C TBD"
+Calculating CTFs for "SURFACE 285 C TBD"
+Calculating CTFs for "SURFACE 286 C TBD"
+Calculating CTFs for "SURFACE 287 C TBD"
+Calculating CTFs for "SURFACE 289 C TBD"
+Calculating CTFs for "SURFACE 290 C TBD"
+Calculating CTFs for "SURFACE 291 C TBD"
+Calculating CTFs for "SURFACE 292 C TBD"
+Calculating CTFs for "SURFACE 293 C TBD"
+Calculating CTFs for "SURFACE 295 C TBD"
+Calculating CTFs for "SURFACE 296 C TBD"
+Calculating CTFs for "SURFACE 297 C TBD"
+Calculating CTFs for "SURFACE 298 C TBD"
+Calculating CTFs for "SURFACE 299 C TBD"
+Calculating CTFs for "SURFACE 3 C TBD"
+Calculating CTFs for "SURFACE 30 C TBD"
+Calculating CTFs for "SURFACE 301 C TBD"
+Calculating CTFs for "SURFACE 302 C TBD"
+Calculating CTFs for "SURFACE 303 C TBD"
+Calculating CTFs for "SURFACE 304 C TBD"
+Calculating CTFs for "SURFACE 305 C TBD"
+Calculating CTFs for "SURFACE 306 C TBD"
+Calculating CTFs for "SURFACE 307 C TBD"
+Calculating CTFs for "SURFACE 309 C TBD"
+Calculating CTFs for "SURFACE 31 C TBD"
+Calculating CTFs for "SURFACE 310 C TBD"
+Calculating CTFs for "SURFACE 311 C TBD"
+Calculating CTFs for "SURFACE 312 C TBD"
+Calculating CTFs for "SURFACE 313 C TBD"
+Calculating CTFs for "SURFACE 314 C TBD"
+Calculating CTFs for "SURFACE 316 C TBD"
+Calculating CTFs for "SURFACE 317 C TBD"
+Calculating CTFs for "SURFACE 318 C TBD"
+Calculating CTFs for "SURFACE 319 C TBD"
+Calculating CTFs for "SURFACE 320 C TBD"
+Calculating CTFs for "SURFACE 321 C TBD"
+Calculating CTFs for "SURFACE 322 C TBD"
+Calculating CTFs for "SURFACE 323 C TBD"
+Calculating CTFs for "SURFACE 324 C TBD"
+Calculating CTFs for "SURFACE 325 C TBD"
+Calculating CTFs for "SURFACE 326 C TBD"
+Calculating CTFs for "SURFACE 327 C TBD"
+Calculating CTFs for "SURFACE 328 C TBD"
+Calculating CTFs for "SURFACE 339 C TBD"
+Calculating CTFs for "SURFACE 340 C TBD"
+Calculating CTFs for "SURFACE 37 C TBD"
+Calculating CTFs for "SURFACE 38 C TBD"
+Calculating CTFs for "SURFACE 39 C TBD"
+Calculating CTFs for "SURFACE 4 C TBD"
+Calculating CTFs for "SURFACE 45 C TBD"
+Calculating CTFs for "SURFACE 46 C TBD"
+Calculating CTFs for "SURFACE 52 C TBD"
+Calculating CTFs for "SURFACE 58 C TBD"
+Calculating CTFs for "SURFACE 59 C TBD"
+Calculating CTFs for "SURFACE 63 C TBD"
+Calculating CTFs for "SURFACE 64 C TBD"
+Calculating CTFs for "SURFACE 71 C TBD"
+Calculating CTFs for "SURFACE 72 C TBD"
+Calculating CTFs for "SURFACE 76 C TBD"
+Calculating CTFs for "SURFACE 77 C TBD"
+Calculating CTFs for "SURFACE 84 C TBD"
+Calculating CTFs for "SURFACE 85 C TBD"
+Calculating CTFs for "SURFACE 86 C TBD"
+Calculating CTFs for "SURFACE 91 C TBD"
+Calculating CTFs for "SURFACE 92 C TBD"
+Calculating CTFs for "SURFACE 96 C TBD"
+Calculating CTFs for "SURFACE 97 C TBD"
+Calculating CTFs for "TYPICAL IEAD ROOF PRE1980"
+Initializing Window Optical Properties
+Initializing Solar Calculations
+Allocate Solar Module Arrays
+Initializing Zone and Enclosure Report Variables
+Initializing Surface (Shading) Report Variables
+Computing Interior Solar Absorption Factors
+Determining Shadowing Combinations
+Computing Window Shade Absorption Factors
+Proceeding with Initializing Solar Calculations
+Initializing Surfaces
+Initializing Outdoor environment for Surfaces
+Setting up Surface Reporting Variables
+Initializing Temperature and Flux Histories
+Initializing Window Shading
+Computing Interior Absorption Factors
+Computing Interior Diffuse Solar Absorption Factors
+Initializing Solar Heat Gains
+Initializing Internal Heat Gains
+Initializing Interior Solar Distribution
+Initializing Interior Convection Coefficients
+Gathering Information for Predefined Reporting
+Completed Initializing Surface Heat Balance
+Calculate Outside Surface Heat Balance
+Calculate Inside Surface Heat Balance
+Calculate Air Heat Balance
+Initializing HVAC
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #1 MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB
+Warming up
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #2 MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #3 MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #4 MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #5 MONTREAL INT'L ANN HTG 99.6% CONDNS DB
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #6 MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #7 MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB
+Adjusting Air System Sizing
+Adjusting Standard 62.1 Ventilation Sizing
+Initializing Simulation
+Reporting Surfaces
+Beginning HVAC Sizing Simulation
+Initializing New Environment Parameters, HVAC Sizing Simulation
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting HVAC Sizing Simulation at 07/21 for MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1
+Initializing New Environment Parameters, HVAC Sizing Simulation
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Warming up {5}
+Warming up {6}
+Starting HVAC Sizing Simulation at 07/21 for MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB HVAC Sizing Pass 1
+Initializing New Environment Parameters, HVAC Sizing Simulation
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Warming up {5}
+Starting HVAC Sizing Simulation at 07/21 for MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB HVAC Sizing Pass 1
+Initializing New Environment Parameters, HVAC Sizing Simulation
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Warming up {5}
+Starting HVAC Sizing Simulation at 07/21 for MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1
+Initializing New Environment Parameters, HVAC Sizing Simulation
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting HVAC Sizing Simulation at 01/21 for MONTREAL INT'L ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1
+Initializing New Environment Parameters, HVAC Sizing Simulation
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting HVAC Sizing Simulation at 01/21 for MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB HVAC Sizing Pass 1
+Initializing New Environment Parameters, HVAC Sizing Simulation
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting HVAC Sizing Simulation at 01/21 for MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB HVAC Sizing Pass 1
+Beginning Primary Simulation
+Initializing New Environment Parameters
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting Simulation at 07/21 for MONTREAL INT'L ANN CLG .4% CONDNS DB=>MWB
+Initializing New Environment Parameters
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Warming up {5}
+Warming up {6}
+Starting Simulation at 07/21 for MONTREAL INT'L ANN CLG .4% CONDNS DP=>MDB
+Initializing New Environment Parameters
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Warming up {5}
+Starting Simulation at 07/21 for MONTREAL INT'L ANN CLG .4% CONDNS ENTH=>MDB
+Initializing New Environment Parameters
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Warming up {5}
+Starting Simulation at 07/21 for MONTREAL INT'L ANN CLG .4% CONDNS WB=>MDB
+Initializing New Environment Parameters
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting Simulation at 01/21 for MONTREAL INT'L ANN HTG 99.6% CONDNS DB
+Initializing New Environment Parameters
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting Simulation at 01/21 for MONTREAL INT'L ANN HTG WIND 99.6% CONDNS WS=>MCDB
+Initializing New Environment Parameters
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting Simulation at 01/21 for MONTREAL INT'L ANN HUM_N 99.6% CONDNS DP=>MCDB
+Initializing New Environment Parameters
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Warming up {5}
+Starting Simulation at 01/01/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=01/21/2006
+Continuing Simulation at 01/21/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=02/10/2006
+Continuing Simulation at 02/10/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=03/02/2006
+Continuing Simulation at 03/02/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=03/22/2006
+Continuing Simulation at 03/22/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=04/11/2006
+Continuing Simulation at 04/11/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=05/01/2006
+Continuing Simulation at 05/01/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=05/21/2006
+Continuing Simulation at 05/21/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=06/10/2006
+Continuing Simulation at 06/10/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=06/30/2006
+Continuing Simulation at 06/30/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=07/20/2006
+Continuing Simulation at 07/20/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=08/09/2006
+Continuing Simulation at 08/09/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=08/29/2006
+Continuing Simulation at 08/29/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=09/18/2006
+Continuing Simulation at 09/18/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=10/08/2006
+Continuing Simulation at 10/08/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=10/28/2006
+Continuing Simulation at 10/28/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=11/17/2006
+Continuing Simulation at 11/17/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=12/07/2006
+Continuing Simulation at 12/07/2006 for RUN PERIOD 1
+Updating Shadowing Calculations, Start Date=12/27/2006
+Continuing Simulation at 12/27/2006 for RUN PERIOD 1
+Writing tabular output file results using HTML format.
+Computing Life Cycle Costs and Reporting
+Writing final SQL reports
+EnergyPlus Run Time=00hr 02min 42.24sec
